@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\motor_drive_four_wheels.gpr
+20221103102350 97689d07ce4bed4d78eeab9d9d1df0fe
+C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_zfp.gpr
+20220915114910 33e4141498f5c9ad1b71b973c7daaa65
+[BOUND OBJECT FILES]
+C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\obj\
+-LC:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\obj\
+-LC:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\zfp_lib_Debug\
+-LC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\zfp-cortex-m4f\adalib\
+-static
+-static-libgcc
+C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\zfp-cortex-m4f\adalib\libgnat.a

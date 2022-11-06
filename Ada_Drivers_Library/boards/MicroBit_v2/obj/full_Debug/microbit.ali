@@ -1,0 +1,193 @@
+V "GNAT Lib v2021"
+A -O0
+A -gnatA
+A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -march=armv7e-m+fp
+P DB SS ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U microbit%s		microbit.ads		0ca0f0b4 NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W nrf%s			nrf.ads			nrf.ali
+W nrf.device%s		nrf-device.adb		nrf-device.ali
+W nrf.gpio%s		nrf-gpio.adb		nrf-gpio.ali
+
+D ada.ads		20220915114630 76789da1 ada%s
+D a-except.ads		20220915114630 946f3014 ada.exceptions%s
+D a-finali.ads		20220915114630 bf4f806b ada.finalization%s
+D a-stream.ads		20220915114630 119b8fb3 ada.streams%s
+D a-string.ads		20220915114630 90ac6797 ada.strings%s
+D a-sttebu.ads		20220915114630 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220915114630 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20220915114630 9eaa38c6 ada.tags%s
+D a-unccon.ads		20220915114630 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20220915114910 2b42c80e hal%s
+D hal-gpio.ads		20220915114910 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20220915114910 0ed73138 hal.i2c%s
+D hal-spi.ads		20220915114910 fe139819 hal.spi%s
+D hal-uart.ads		20220915114910 d58316b4 hal.uart%s
+D interfac.ads		20220915114630 edec285f interfaces%s
+D microbit.ads		20220922105756 3b54a3e8 microbit%s
+D nrf.ads		20220915114910 74cf72f5 nrf%s
+D nrf-device.ads	20220915114910 9c9916c4 nrf.device%s
+D nrf-gpio.ads		20220915114910 ab6d4598 nrf.gpio%s
+D nrf-rtc.ads		20220915114910 36d88130 nrf.rtc%s
+D nrf-spi_master.ads	20220915114910 a8ff49a3 nrf.spi_master%s
+D nrf-timers.ads	20221020091824 15fa58e3 nrf.timers%s
+D nrf-twi.ads		20220915114910 4881713f nrf.twi%s
+D nrf-uart.ads		20220915114910 9fa4b8b9 nrf.uart%s
+D nrf_svd.ads		20220915114910 87ba21d7 nrf_svd%s
+D nrf_svd-rtc.ads	20220915114910 57c7ffc8 nrf_svd.rtc%s
+D nrf_svd-spi.ads	20220915114910 6e2ffb69 nrf_svd.spi%s
+D nrf_svd-timer.ads	20220915114910 ba50db1c nrf_svd.timer%s
+D nrf_svd-twi.ads	20220915114910 68301534 nrf_svd.twi%s
+D nrf_svd-uart.ads	20220915114910 83bcebc8 nrf_svd.uart%s
+D system.ads		20220915114630 ad54c63c system%s
+D s-finmas.ads		20220915114630 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20220915114630 4ff27390 system.finalization_root%s
+D s-parame.ads		20220915114630 8e90778f system.parameters%s
+D s-pooglo.ads		20220915114630 ede33ef8 system.pool_global%s
+D s-putima.ads		20220915114630 4e095881 system.put_images%s
+D s-secsta.ads		20220915114630 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220915114630 472fbca8 system.standard_library%s
+D s-stoele.ads		20220915114630 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20220915114630 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20220915114630 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220915114630 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20220915114630 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20220915114630 2b077493 system.unsigned_types%s
+D unchconv.ads		20220915114630 ca2f9e18 unchecked_conversion%s
+G a e
+X 11 hal-gpio.ads
+47h9*GPIO_Point
+X 12 hal-i2c.ads
+48h9*I2C_Port
+X 13 hal-spi.ads
+48h9*SPI_Port
+X 14 hal-uart.ads
+48h9*UART_Port
+X 16 microbit.ads
+58K9*MicroBit 115l5 115e13
+59r4*MB_P0=59:53{19|66R9}
+60r4*MB_P1=60:53{19|66R9}
+61r4*MB_P2=61:53{19|66R9}
+62r4*MB_P3=62:53{19|66R9}
+63r4*MB_P4=63:53{19|66R9}
+64r4*MB_P5=64:53{19|66R9} 95r43
+65r4*MB_P6=65:53{19|66R9}
+66r4*MB_P7=66:53{19|66R9}
+67r4*MB_P8=67:53{19|66R9}
+68r4*MB_P9=68:53{19|66R9}
+69r4*MB_P10=69:53{19|66R9}
+70r4*MB_P11=70:53{19|66R9} 96r43
+71r4*MB_P12=71:53{19|66R9}
+72r4*MB_P13=72:53{19|66R9} 103r42
+73r4*MB_P14=73:53{19|66R9} 104r42
+74r4*MB_P15=74:53{19|66R9} 105r42
+75r4*MB_P16=75:53{19|66R9}
+78r4*MB_P19=78:53{19|66R9}
+79r4*MB_P20=79:53{19|66R9}
+80r4*MB_P21=80:53{19|66R9}
+81r4*MB_P22=81:53{19|66R9}
+82r4*MB_P23=82:53{19|66R9}
+83r4*MB_P24=83:53{19|66R9}
+84r4*MB_P25=84:53{19|66R9}
+85r4*MB_P26=85:53{19|66R9} 97r43
+86r4*MB_P27=86:53{19|66R9} 98r42
+87r4*MB_P28=87:53{19|66R9} 99r45
+88r4*MB_P29=88:53{19|66R9} 100r44
+89r4*MB_P30=89:53{19|66R9} 107r42
+90r4*MB_P31=90:53{19|66R9} 108r42
+91r4*MB_P32=91:53{19|66R9} 101r53
+92r4*MB_P33=92:53{19|66R9} 113r45
+93r4*MB_P34=93:53{19|66R9} 114r45
+95r4*MB_BTN_A=95:43{19|66R9}
+96r4*MB_BTN_B=96:43{19|66R9}
+97r4*MB_TOUCH=97:43{19|66R9}
+98r4*MB_SPKR=98:42{19|66R9}
+99r4*MB_MIC_RUN=99:45{19|66R9}
+100r4*MB_MIC_IN=100:44{19|66R9}
+101r4*MB_COMB_SENSOR_INT=101:53{19|66R9}
+103r4*MB_SCK=103:42{19|66R9}
+104r4*MB_MISO=104:42{19|66R9}
+105r4*MB_MOSI=105:42{19|66R9}
+107r4*MB_SDA=107:42{19|66R9}
+108r4*MB_SCL=108:42{19|66R9}
+113r4*MB_UART_RX=113:45{19|66R9}
+114r4*MB_UART_TX=114:45{19|66R9}
+X 17 nrf.ads
+34K9*nRF 16|32r6 33r6 59r14 59r42 60r14 60r42 61r14 61r42 62r14 62r42 63r14
+. 63r42 64r14 64r42 65r14 65r42 66r14 66r42 67r14 67r42 68r14 68r42 69r14
+. 69r42 70r14 70r42 71r14 71r42 72r14 72r42 73r14 73r42 74r14 74r42 75r14
+. 75r42 78r14 78r42 79r14 79r42 80r14 80r42 81r14 81r42 82r14 82r42 83r14
+. 83r42 84r14 84r42 85r14 85r42 86r14 86r42 87r14 87r42 88r14 88r42 89r14
+. 89r42 90r14 90r42 91r14 91r42 92r14 92r42 93r14 93r42 95r15 96r15 97r15
+. 98r14 99r17 100r16 101r25 103r14 104r14 105r14 107r14 108r14 113r17 114r17
+. 17|43e8
+X 18 nrf-device.ads
+44K13*Device 16|32w10 59r46 60r46 61r46 62r46 63r46 64r46 65r46 66r46 67r46
+. 68r46 69r46 70r46 71r46 72r46 73r46 74r46 75r46 78r46 79r46 80r46 81r46
+. 82r46 83r46 84r46 85r46 86r46 87r46 88r46 89r46 90r46 91r46 92r46 93r46
+. 18|124e15
+47r4*P00{19|66R9} 16|86r53
+48r4*P01{19|66R9} 16|73r53
+49r4*P02{19|66R9} 16|59r53
+50r4*P03{19|66R9} 16|60r53
+51r4*P04{19|66R9} 16|61r53
+52r4*P05{19|66R9} 16|88r53
+53r4*P06{19|66R9} 16|93r53
+55r4*P08{19|66R9} 16|90r53
+56r4*P09{19|66R9} 16|68r53
+57r4*P10{19|66R9} 16|67r53
+58r4*P11{19|66R9} 16|66r53
+59r4*P12{19|66R9} 16|71r53
+60r4*P13{19|66R9} 16|74r53
+61r4*P14{19|66R9} 16|64r53
+62r4*P15{19|66R9} 16|82r53
+63r4*P16{19|66R9} 16|89r53
+64r4*P17{19|66R9} 16|72r53
+66r4*P19{19|66R9} 16|84r53
+67r4*P20{19|66R9} 16|87r53
+68r4*P21{19|66R9} 16|80r53
+69r4*P22{19|66R9} 16|81r53
+70r4*P23{19|66R9} 16|70r53
+71r4*P24{19|66R9} 16|83r53
+72r4*P25{19|66R9} 16|91r53
+73r4*P26{19|66R9} 16|78r53
+75r4*P28{19|66R9} 16|63r53
+77r4*P30{19|66R9} 16|69r53
+78r4*P31{19|66R9} 16|62r53
+79r4*P32{19|66R9} 16|79r53
+81r4*P34{19|66R9} 16|75r53
+83r4*P36{19|66R9} 16|85r53
+84r4*P37{19|66R9} 16|65r53
+87r4*P40{19|66R9} 16|92r53
+X 19 nrf-gpio.ads
+34K13*GPIO 16|33w10 59r18 60r18 61r18 62r18 63r18 64r18 65r18 66r18 67r18
+. 68r18 69r18 70r18 71r18 72r18 73r18 74r18 75r18 78r18 79r18 80r18 81r18
+. 82r18 83r18 84r18 85r18 86r18 87r18 88r18 89r18 90r18 91r18 92r18 93r18
+. 95r19 96r19 97r19 98r18 99r21 100r20 101r29 103r18 104r18 105r18 107r18
+. 108r18 113r21 114r21 19|122e13
+66R9*GPIO_Point<11|47R9> 16|59r23 60r23 61r23 62r23 63r23 64r23 65r23 66r23
+. 67r23 68r23 69r23 70r23 71r23 72r23 73r23 74r23 75r23 78r23 79r23 80r23
+. 81r23 82r23 83r23 84r23 85r23 86r23 87r23 88r23 89r23 90r23 91r23 92r23
+. 93r23 95r24 96r24 97r24 98r23 99r26 100r25 101r34 103r23 104r23 105r23
+. 107r23 108r23 113r26 114r26 19|68e14
+

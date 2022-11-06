@@ -1,0 +1,122 @@
+graph: { title: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb"
+edge: { sourcename: "nrf__timers__TtimerCFD"
+  targetname: "-9:nrf__timers__timer,nrf__timers__timer"
+  label: "nrf-timers.ads:37:9"
+}
+class {
+  classname: "nrf__timers__timer"
+  label: "nrf__timers__timer\nrf-timers.ads:37:9"
+  parent: "nrf__timers__timer"
+  virtuals: "1:nrf__timers__set_prescaler\n
+             2:nrf__timers__set_mode\n
+             3:nrf__timers__set_bitmode\n
+             4:nrf__timers__bitmode\n
+             5:nrf__timers__compare_interrupt\n
+             6:nrf__timers__start\n
+             7:nrf__timers__stop\n
+             8:nrf__timers__clear\n
+             9:nrf__timers__compare_shortcut\n
+             10:nrf__timers__set_compare\n
+             11:nrf__timers__capture\n
+             12:nrf__timers__capture__2\n
+             13:nrf__timers__cc_register\n
+             14:nrf__timers__start_task\n
+             15:nrf__timers__stop_task\n
+             16:nrf__timers__count_task\n
+             17:nrf__timers__clear_task\n
+             18:nrf__timers__capture_task\n
+             19:nrf__timers__compare_event\n
+             -1:nrf__timers___size\n
+             -10:nrf__timers__timerPI\n
+             -2:nrf__timers__timerSR\n
+             -3:nrf__timers__timerSW\n
+             -4:nrf__timers__timerSI\n
+             -5:nrf__timers__timerSO\n
+             -6:nrf__timers__Oeq\n
+             -7:nrf__timers___assign\n
+             -8:nrf__timers__timerDA\n
+             -9:nrf__timers__timerDF"
+}
+node: { title: "nrf__timers__timerIP" label: "Timerip\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9\n24 bytes (static)" }
+node: { title: "nrf__timers___size" label: "Timers\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9\n16 bytes (static)" }
+node: { title: "nrf__timers__timerPI" label: "Timerpi\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9\n16 bytes (static)" }
+node: { title: "system__put_images__put_image_unknown" label: "Put_Image_Unknown\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-putima.ads:106:14" shape : ellipse }
+edge: { sourcename: "nrf__timers__timerPI" targetname: "system__put_images__put_image_unknown" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9" }
+node: { title: "nrf__timers__timerSR" label: "Timersr\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9\n24 bytes (static)" }
+node: { title: "nrf__timers__timerSW" label: "Timersw\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9\n24 bytes (static)" }
+node: { title: "nrf__timers__timerSI" label: "Timersi\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9\n32 bytes (static)" }
+node: { title: "system__stream_attributes__i_as" label: "I_As\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-stratt.ads:108:13" shape : ellipse }
+edge: { sourcename: "nrf__timers__timerSI" targetname: "system__stream_attributes__i_as" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9" }
+edge: { sourcename: "nrf__timers__timerSI" targetname: "nrf__timers__timerIP" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9" }
+edge: { sourcename: "nrf__timers__timerSI" targetname: "nrf__timers__timerSR" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-secsta.ads:58:14" shape : ellipse }
+edge: { sourcename: "nrf__timers__timerSI" targetname: "system__secondary_stack__ss_allocate" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9" }
+node: { title: "nrf__timers__timerSO" label: "Timerso\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9\n32 bytes (static)" }
+node: { title: "system__stream_attributes__w_as" label: "W_As\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-stratt.ads:146:14" shape : ellipse }
+edge: { sourcename: "nrf__timers__timerSO" targetname: "system__stream_attributes__w_as" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9" }
+edge: { sourcename: "nrf__timers__timerSO" targetname: "nrf__timers__timerSW" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9" }
+node: { title: "nrf__timers__Oeq" label: "=\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:4\n16 bytes (static)" }
+node: { title: "nrf__timers___assign" label: "Timers\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9\n440 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Discriminant_Check" label: "gnat_rcheck_CE_Discriminant_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__timers___assign" targetname: "__gnat_rcheck_CE_Discriminant_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9" }
+node: { title: "nrf__timers__timerDA" label: "Timerda\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9\n16 bytes (static)" }
+node: { title: "nrf__timers__timerDF" label: "Timerdf\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9\n16 bytes (static)" }
+node: { title: "nrf__timers__TtimerCFD" label: "Ttimercfd\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:37:9\n32 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "nrf__timers__TtimerCFD" targetname: "__indirect_call" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:37:9" }
+node: { title: "nrf__timers__timer_bitmodeH" label: "Timer_Bitmodeh\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:65:9\n32 bytes (static)" }
+node: { title: "nrf__timers__finalize_spec" label: "Finalize_Spec\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:35:1\n8 bytes (static)" }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\a-tags.ads:589:14" shape : ellipse }
+edge: { sourcename: "nrf__timers__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:35:1" }
+node: { title: "nrf__timers__start" label: "Start\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:40:4\n16 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "gnat_rcheck_PE_Access_Before_Elaboration\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__timers__start" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:40:4" }
+node: { title: "nrf__timers__stop" label: "Stop\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:49:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__timers__stop" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:49:4" }
+node: { title: "nrf__timers__clear" label: "Clear\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:58:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__timers__clear" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:58:4" }
+node: { title: "nrf__timers__set_prescaler" label: "Set_Prescaler\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:68:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__timers__set_prescaler" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:68:4" }
+node: { title: "nrf__timers__set_mode" label: "Set_Mode\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:80:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__timers__set_mode" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:80:4" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__timers__set_mode" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:86:15" }
+node: { title: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:nrf__timers__set_bitmode___postconditions.0" label: "Set_Bitmode\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:95:4\n32 bytes (static)" }
+edge: { sourcename: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:nrf__timers__set_bitmode___postconditions.0" targetname: "nrf__timers__bitmode" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:72:19" }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-assert.ads:48:14" shape : ellipse }
+edge: { sourcename: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:nrf__timers__set_bitmode___postconditions.0" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:72:19" }
+node: { title: "nrf__timers__set_bitmode" label: "Set_Bitmode\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:95:4\n32 bytes (static)" }
+edge: { sourcename: "nrf__timers__set_bitmode" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:95:4" }
+edge: { sourcename: "nrf__timers__set_bitmode" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:101:15" }
+edge: { sourcename: "nrf__timers__set_bitmode" targetname: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:nrf__timers__set_bitmode___postconditions.0" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:106:8" }
+node: { title: "nrf__timers__bitmode" label: "Bitmode\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:112:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__timers__bitmode" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:112:4" }
+edge: { sourcename: "nrf__timers__bitmode" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:115:34" }
+node: { title: "nrf__timers__compare_interrupt" label: "Compare_Interrupt\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:126:4\n24 bytes (static)" }
+edge: { sourcename: "nrf__timers__compare_interrupt" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:126:4" }
+node: { title: "nrf__timers__compare_shortcut" label: "Compare_Shortcut\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:142:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__timers__compare_shortcut" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:142:4" }
+edge: { sourcename: "nrf__timers__compare_shortcut" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:148:12" }
+node: { title: "nrf__timers__set_compare" label: "Set_Compare\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:174:4\n24 bytes (static)" }
+edge: { sourcename: "nrf__timers__set_compare" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:174:4" }
+node: { title: "nrf__timers__capture" label: "Capture\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:187:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__timers__capture" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:187:4" }
+node: { title: "nrf__timers__capture__2" label: "Capture\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:197:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__timers__capture__2" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:197:4" }
+edge: { sourcename: "nrf__timers__capture__2" targetname: "nrf__timers__capture" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:203:11" }
+edge: { sourcename: "nrf__timers__capture__2" targetname: "nrf__timers__cc_register" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:204:18" }
+node: { title: "nrf__timers__cc_register" label: "Cc_Register\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:211:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__timers__cc_register" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:211:4" }
+node: { title: "nrf__timers__start_task" label: "Start_Task\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:223:4\n16 bytes (static)" }
+node: { title: "nrf__timers__stop_task" label: "Stop_Task\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:231:4\n16 bytes (static)" }
+node: { title: "nrf__timers__count_task" label: "Count_Task\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:239:4\n16 bytes (static)" }
+node: { title: "nrf__timers__clear_task" label: "Clear_Task\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:247:4\n16 bytes (static)" }
+node: { title: "nrf__timers__capture_task" label: "Capture_Task\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:255:4\n16 bytes (static)" }
+node: { title: "nrf__timers__compare_event" label: "Compare_Event\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:264:4\n16 bytes (static)" }
+node: { title: "nrf__timers___elabb" label: "Timers\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.adb:34:1\n4 bytes (static)" }
+node: { title: "nrf__timers___elabs" label: "Timers\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:35:1\n8 bytes (static)" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "nrf__timers___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "nrf__timers___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-timers.ads:155:9" }
+}

@@ -1,0 +1,124 @@
+V "GNAT Lib v2021"
+M P W=b
+A -O0
+A -gnatA
+A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -g
+A -march=armv7e-m+fp
+P DB LC TF  SS ZX
+
+RN
+RV NO_DELAY
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U main%b		main.adb		083f9908 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W microbit%s		microbit.ads		microbit.ali
+W microbit.displayrt%s	microbit-displayrt.adb	microbit-displayrt.ali
+
+D ada.ads		20220915114630 76789da1 ada%s
+D a-except.ads		20220915114630 946f3014 ada.exceptions%s
+D a-finali.ads		20220915114630 bf4f806b ada.finalization%s
+D a-reatim.ads		20220915114630 cfe92427 ada.real_time%s
+D a-retide.ads		20220915114630 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20220915114630 119b8fb3 ada.streams%s
+D a-string.ads		20220915114630 90ac6797 ada.strings%s
+D a-sttebu.ads		20220915114630 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220915114630 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20220915114630 9eaa38c6 ada.tags%s
+D a-textio.ads		20220915114630 ffc84532 ada.text_io%s
+D a-unccon.ads		20220915114630 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20220915114910 2b42c80e hal%s
+D hal-gpio.ads		20220915114910 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20220915114910 0ed73138 hal.i2c%s
+D hal-spi.ads		20220915114910 fe139819 hal.spi%s
+D hal-uart.ads		20220915114910 d58316b4 hal.uart%s
+D interfac.ads		20220915114630 edec285f interfaces%s
+D main.adb		20220915122752 15bbed61 main%b
+D microbit.ads		20220915114910 3b54a3e8 microbit%s
+D microbit-displayrt.ads  20220915114910 2da5157c microbit.displayrt%s
+D nrf.ads		20220915114910 74cf72f5 nrf%s
+D nrf-device.ads	20220915114910 9c9916c4 nrf.device%s
+D nrf-gpio.ads		20220915114910 ab6d4598 nrf.gpio%s
+D nrf-rtc.ads		20220915114910 36d88130 nrf.rtc%s
+D nrf-spi_master.ads	20220915114910 a8ff49a3 nrf.spi_master%s
+D nrf-timers.ads	20220915114910 385f1a57 nrf.timers%s
+D nrf-twi.ads		20220915114910 4881713f nrf.twi%s
+D nrf-uart.ads		20220915114910 9fa4b8b9 nrf.uart%s
+D nrf_svd.ads		20220915114910 87ba21d7 nrf_svd%s
+D nrf_svd-rtc.ads	20220915114910 57c7ffc8 nrf_svd.rtc%s
+D nrf_svd-spi.ads	20220915114910 6e2ffb69 nrf_svd.spi%s
+D nrf_svd-timer.ads	20220915114910 ba50db1c nrf_svd.timer%s
+D nrf_svd-twi.ads	20220915114910 68301534 nrf_svd.twi%s
+D nrf_svd-uart.ads	20220915114910 83bcebc8 nrf_svd.uart%s
+D system.ads		20220915114630 ad54c63c system%s
+D s-bb.ads		20220915114630 09e072ae system.bb%s
+D s-bbbopa.ads		20220915114630 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20220915114630 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20220915114630 ac5bcd4d system.bb.cpu_primitives%s
+D s-bbinte.ads		20220915114630 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20220915114630 9339744a system.bb.mcu_parameters%s
+D s-bbpara.ads		20220915114630 63167d1e system.bb.parameters%s
+D s-bbthre.ads		20220915114630 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20220915114630 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20220915114630 ad086247 system.bb.time%s
+D s-finmas.ads		20220915114630 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20220915114630 4ff27390 system.finalization_root%s
+D s-multip.ads		20220915114630 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20220915114630 229b14dd system.os_interface%s
+D s-parame.ads		20220915114630 8e90778f system.parameters%s
+D s-pooglo.ads		20220915114630 ede33ef8 system.pool_global%s
+D s-putima.ads		20220915114630 4e095881 system.put_images%s
+D s-secsta.ads		20220915114630 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220915114630 472fbca8 system.standard_library%s
+D s-stoele.ads		20220915114630 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20220915114630 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20220915114630 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220915114630 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20220915114630 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20220915114630 2b077493 system.unsigned_types%s
+D unchconv.ads		20220915114630 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [main standard 5 11 none]
+G r c none [main standard 5 11 none] [scroll_text microbit__displayrt 48 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 19|1r6 1r23 2r6 2r25
+X 4 a-reatim.ads
+40K13*Real_Time 181e18 19|2w10 2r29
+50M9*Time<46|46M9>
+60I9*Time_Span<46|81I9>
+67V13*Clock{50M9}<46|134p13> 19|12s19
+71V14*"+"{50M9} 19|12s25
+127V13*Milliseconds{60I9} 19|12s27
+X 11 a-textio.ads
+36K13*Text_IO 52e16 19|1w10 1r27
+46U14*Put_Line 19|8s7
+X 14 hal-gpio.ads
+47h9*GPIO_Point
+X 15 hal-i2c.ads
+48h9*I2C_Port
+X 16 hal-spi.ads
+48h9*SPI_Port
+X 17 hal-uart.ads
+48h9*UART_Port
+X 19 main.adb
+5U11*Main 5b11 14l5 14t9
+X 20 microbit.ads
+58K9*MicroBit 19|3r6 3r30 20|112e13
+X 21 microbit-displayrt.ads
+32K18*DisplayRT 19|3w15 3r39 21|72e23
+48U14*Scroll_Text 19|10s7
+X 46 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+

@@ -1,0 +1,253 @@
+V "GNAT Lib v2021"
+A -O0
+A -gnatA
+A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -march=armv7e-m+fp
+P DB SS ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U nrf.twi%b		nrf-twi.adb		785862c6 OO PK
+W nrf%s			nrf.ads			nrf.ali
+W nrf_svd%s		nrf_svd.ads		nrf_svd.ali
+W nrf_svd.twi%s		nrf_svd-twi.ads		nrf_svd-twi.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+
+U nrf.twi%s		nrf-twi.ads		da86aa50 EE OO PF PK
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+W hal.i2c%s		hal-i2c.ads		hal-i2c.ali
+W nrf%s			nrf.ads			nrf.ali
+W nrf.gpio%s		nrf-gpio.adb		nrf-gpio.ali
+W nrf_svd%s		nrf_svd.ads		nrf_svd.ali
+W nrf_svd.twi%s		nrf_svd-twi.ads		nrf_svd-twi.ali
+Z system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+
+D ada.ads		20220915114630 76789da1 ada%s
+D a-assert.ads		20220915114630 a718b65c ada.assertions%s
+D a-except.ads		20220915114630 946f3014 ada.exceptions%s
+D a-finali.ads		20220915114630 bf4f806b ada.finalization%s
+D a-stream.ads		20220915114630 119b8fb3 ada.streams%s
+D a-string.ads		20220915114630 90ac6797 ada.strings%s
+D a-sttebu.ads		20220915114630 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220915114630 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20220915114630 9eaa38c6 ada.tags%s
+D a-unccon.ads		20220915114630 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20220915114910 2b42c80e hal%s
+D hal-gpio.ads		20220915114910 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20220915114910 0ed73138 hal.i2c%s
+D interfac.ads		20220915114630 edec285f interfaces%s
+D nrf.ads		20220915114910 74cf72f5 nrf%s
+D nrf-gpio.ads		20220915114910 ab6d4598 nrf.gpio%s
+D nrf-twi.ads		20220915114910 4881713f nrf.twi%s
+D nrf-twi.adb		20220915114910 58e906cd nrf.twi%b
+D nrf_svd.ads		20220915114910 87ba21d7 nrf_svd%s
+D nrf_svd-twi.ads	20220915114910 68301534 nrf_svd.twi%s
+D system.ads		20220915114630 ad54c63c system%s
+D s-assert.ads		20220915114630 6a49a4e4 system.assertions%s
+D s-finmas.ads		20220915114630 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20220915114630 4ff27390 system.finalization_root%s
+D s-parame.ads		20220915114630 8e90778f system.parameters%s
+D s-pooglo.ads		20220915114630 ede33ef8 system.pool_global%s
+D s-putima.ads		20220915114630 4e095881 system.put_images%s
+D s-secsta.ads		20220915114630 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220915114630 472fbca8 system.standard_library%s
+D s-stoele.ads		20220915114630 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20220915114630 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20220915114630 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220915114630 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20220915114630 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20220915114630 2b077493 system.unsigned_types%s
+D unchconv.ads		20220915114630 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [enable nrf__twi 44 14 none]
+G c Z s b [disable nrf__twi 46 14 none]
+G c Z s b [enabled nrf__twi 48 13 none]
+G c Z s b [configure nrf__twi 50 14 none]
+G c Z s b [disconnect nrf__twi 54 14 none]
+G c Z s b [master_transmit nrf__twi 58 14 none]
+G c Z s b [master_receive nrf__twi 67 14 none]
+G c Z s b [mem_write nrf__twi 76 14 none]
+G c Z s b [mem_read nrf__twi 87 14 none]
+G c Z s s [twi_masterDA nrf__twi 99 9 none]
+G c Z s s [twi_masterDF nrf__twi 99 9 none]
+G c Z s s [twi_masterIP nrf__twi 99 9 none]
+G c Z b b [stop_sequence nrf__twi 36 14 none]
+G r s errorsrc_register [master_transmit nrf__twi 58 14 none] [errorsrc_registerIP nrf_svd__twi 524 9 none]
+G r s errorsrc_register [mem_write nrf__twi 76 14 none] [errorsrc_registerIP nrf_svd__twi 524 9 none]
+G r s errorsrc_register [mem_read nrf__twi 87 14 none] [errorsrc_registerIP nrf_svd__twi 524 9 none]
+X 11 hal.ads
+34K9*HAL 166e8 17|32w6 32r25 33r6 33r25 42r10 100r10
+49M9*UInt7 18|135r38 202r38
+53M9*UInt8<14|68M9> 18|274r52 279r47 280r47 318r52 323r47 324r47
+54M9*UInt10
+66M9*UInt16<14|71M9> 17|79r23 90r23 18|261r23 306r23
+97M9*UInt32<14|79M9> 18|92r30 93r30 123r17
+162A9*UInt8_Array(53M9)<integer>
+X 12 hal-gpio.ads
+47h9*GPIO_Point
+X 13 hal-i2c.ads
+32K13*I2C 84e12 17|33w10 33r29 42r14 100r14
+34E9*I2C_Status 38e12 17|62r21 71r21 82r27 93r27 18|118r21 188r21 264r27
+. 309r27
+35n7*Ok{34E9} 18|127r20 176r17 194r20 251r17 288r20 331r20
+36n7*Err_Error{34E9} 18|150r26 224r26
+40A12*I2C_Data{11|162A9}<integer> 17|61r17 70r21 81r23 92r27 18|117r17 187r21
+. 263r23 308r27
+42E9*I2C_Memory_Address_Size 44e23 17|80r23 91r23 18|262r23 307r23
+43n7*Memory_Size_8b{42E9} 18|272r15 316r15
+44n7*Memory_Size_16b{42E9} 18|277r15 321r15
+46M12*I2C_Address{11|54M9} 17|60r17 69r17 78r23 89r23 18|116r17 186r17 260r23
+. 305r23
+48h9*I2C_Port 17|42r18 100r18
+X 14 interfac.ads
+68M9*Unsigned_8
+71M9*Unsigned_16
+79M9*Unsigned_32
+119V13*Shift_Right{71M9} 18|279s54 323s54
+X 15 nrf.ads
+34K9*nRF 43e8 17|34r6 34r23 37r9 104r5 18|34r14 342r5
+X 16 nrf-gpio.ads
+34K13*GPIO 122e13 17|34w10 34r27
+36I12*GPIO_Pin_Index{natural} 17|51r36 18|88r18
+X 17 nrf-twi.ads
+37K13*TWI 15|34k9 17|99E9 104l9 104e12 18|34b18 342l9 342t12
+39E9*TWI_Speed 39e61 52r36 18|89r18
+39n23*TWI_100kbps{39E9} 18|95r41
+39n36*TWI_250kbps{39E9} 18|96r41
+39n49*TWI_400kbps{39E9} 18|97r41
+41R9*TWI_Master<13|48R9> 41d21 44p14 44r36 46p14 46r37 48p13 48r29 50p14
+. 50r43 54p14 54r40 58P14 59r24 67P14 68r24 76P14 77r30 87P14 88r30 99c9
+. 102e14 18|36r43 42r43 59r36 68r37 77r29 87r25 104r40 115r24 185r24 259r30
+. 304r30
+44U14*Enable 44=22 18|59b14 62l8 62t14
+44r22 This{41R9} 18|59b22 61r7
+46U14*Disable 46=23 18|68b14 71l8 71t15
+46r23 This{41R9} 18|68b23 70r7
+48V13*Enabled{boolean} 48>22 64s18 73s18 84s18 95s18 18|77b13 80l8 80t15
+48r22 This{41R9} 18|77b22 79r14
+50U14*Configure 50=25 51>25 51>30 52>25 18|86b14 98l8 98t17
+50r25 This{41R9} 18|87b7 92r7 93r7 94r7
+51i25 SCL{16|36I12} 18|88b7 92r38
+51i30 SDA{16|36I12} 18|88b12 93r38
+52e25 Speed{39E9} 18|89b7 94r38
+54U14*Disconnect 54=26 18|104b14 108l8 108t18
+54r26 This{41R9} 18|104b26 106r7 107r7
+58U14*Master_Transmit<13|52p14> 59=7 60>7 61>7 62<7 63>7 18|114b25 177l8
+. 177t23 273s18 278s18 293s12 317s18 322s18
+59r7 This{41R9} 64r27 18|115b7 132r7 135r7 138r7 141r7 147r24 149r27 152r16
+. 155r16 160r23 164r10 168r10 172r10 173m25
+60m7 Addr{13|46M12} 18|116b7 135r45 273r35 278r35 293r29 317r35 322r35
+61a7 Data{13|40A12} 18|117b7 122r26 126r10 138r30 138r36 166r28 168r33 274r35
+. 279r35 294r29 318r35 323r35
+62e7 Status{13|34E9} 18|118b7 127m10 150m16 176m7 275r35 281r35 295r29 319r35
+. 325r35
+63i7 Timeout{natural} 18|119b7 121r28 276r35 282r35 296r29 320r35 326r35
+67U14*Master_Receive<13|59p14> 68=7 69>7 70<7 71<7 72>7 18|184b25 252l8 252t22
+. 336s12
+68r7 This{41R9} 73r27 18|185b7 199r7 202r7 207r10 208r10 212r10 213r10 217r7
+. 223r16 226r16 228m31 233r23 237r10 238r26 240r44 244r13 245r13 248r10
+69m7 Addr{13|46M12} 18|186b7 202r45 336r28
+70a7 Data{13|40A12} 18|187b7 193r10 205r10 219r20 238m10 240r21 337r28
+71e7 Status{13|34E9} 18|188b7 194m10 224m16 251m7 338r28
+72i7 Timeout{natural} 18|189b7 191r28 339r28
+76U14*Mem_Write<13|66p14> 77=7 78>7 79>7 80>7 81>7 82<7 83>7 18|258b25 297l8
+. 297t17
+77r7 This{41R9} 84r27 18|259b7 269m7 273m13 273r13 278m13 278r13 286m7 289m10
+. 289r10 293m7 293r7
+78m7 Addr{13|46M12} 18|260b7 273r46 278r46 293r40
+79m7 Mem_Addr{11|66M9} 18|261b7 274r59 279r67 280r54
+80e7 Mem_Addr_Size{13|42E9} 18|262b7 271r12
+81a7 Data{13|40A12} 18|263b7 294r40
+82e7 Status{13|34E9} 18|264b7 275m46 281m46 288r10 295m40
+83i7 Timeout{natural} 18|265b7 276r46 282r46 296r40
+87U14*Mem_Read<13|75p14> 88=7 89>7 90>7 91>7 92<7 93<7 94>7 18|303b25 340l8
+. 340t16
+88r7 This{41R9} 95r27 18|304b7 313m7 317m13 317r13 322m13 322r13 329m7 332m10
+. 332r10 336m7 336r7
+89m7 Addr{13|46M12} 18|305b7 317r46 322r46 336r39
+90m7 Mem_Addr{11|66M9} 18|306b7 318r59 323r67 324r54
+91e7 Mem_Addr_Size{13|42E9} 18|307b7 315r12
+92a7 Data{13|40A12} 18|308b7 337m39
+93e7 Status{13|34E9} 18|309b7 319m46 325m46 331r10 338m39
+94i7 Timeout{natural} 18|310b7 320r46 326r46 339r39
+101b7 Do_Stop_Sequence{boolean} 18|172r15 240r49 269m12 286m12 313m12 329m12
+X 18 nrf-twi.adb
+36U14 Stop_Sequence 36=29 42b14 53l8 53t21 173s10 228s16 289s15 332s15
+36c29 This<17|41R9> 42b29 46r7 48r7 50r13
+122i7 Index{integer} 166r20 168r39 169m10 169r19
+123m7 Evt_Err{11|97M9} 147m13 148r16
+124r7 Err_Src{20|524R9} 149m16
+219i11 Index{integer} 238r16 240r13
+X 19 nrf_svd.ads
+49K9*NRF_SVD 17|35r6 41r46 99r46 18|32r6 32r23 19|122e12
+X 20 nrf_svd-twi.ads
+48K17*TWI 17|35w14 41r54 99r54 18|32w14 32r31 20|710e16
+58n7*Disabled{56E9} 18|208r43 244r46
+60n7*Enabled{56E9} 18|212r43
+69n7*Disabled{67E9} 18|213r40
+71n7*Enabled{67E9} 18|207r40 245r46
+80e7*BB_SUSPEND{56E9} 18|208m29 212m29 244m32
+82e7*BB_STOP{67E9} 18|207m29 213m29 245m32
+473n7*Clear{469E9} 18|132r32 199r32
+495n7*Clear{491E9} 18|132r39 199r39
+517n7*Clear{513E9} 18|132r46 199r46
+524R9*ERRORSRC_Register 18|124r17 20|535e6
+548n7*Disabled{546E9} 18|70r36
+550n7*Enabled{546E9} 18|61r36 79r42
+559e7*ENABLE{546E9} 18|61m26 70m26 79r33
+571M12*RXD_RXD_Field{11|53M9}
+577m7*RXD{571M12} 18|238r42
+589M12*TXD_TXD_Field{11|53M9}
+594m7*TXD{589M12} 18|138m23 168m26
+611m7*ADDRESS{606M12} 18|135m27 202m27
+628R9*TWI_Peripheral 17|41r58 99r58 20|675e6
+630m7*TASKS_STARTRX{11|97M9} 18|217m19
+632m7*TASKS_STARTTX{11|97M9} 18|141m19
+634m7*TASKS_STOP{11|97M9} 18|48m19 155m28
+638m7*TASKS_RESUME{11|97M9} 18|248m22
+640m7*EVENTS_STOPPED{11|97M9} 18|46m19 50r25
+642m7*EVENTS_RXDREADY{11|97M9} 18|233r35 237m22
+644m7*EVENTS_TXDSENT{11|97M9} 18|160r35 164m22
+646m7*EVENTS_ERROR{11|97M9} 18|147r36 152m28 223r28 226m28
+653r7*SHORTS{78R9} 18|207m22 208m22 212m22 213m22 244m25 245m25
+659r7*ERRORSRC{524R9} 18|132m19 149r39 199m19
+661r7*ENABLE{557R9} 18|61m19 70m19 79r26
+663m7*PSELSCL{11|97M9} 18|92m19 106m19
+665m7*PSELSDA{11|97M9} 18|93m19 107m19
+667r7*RXD{574R9} 18|238r38
+669r7*TXD{592R9} 18|138m19 168m22
+671m7*FREQUENCY{11|97M9} 18|94m19
+673r7*ADDRESS{609R9} 18|135m19 202m19
+

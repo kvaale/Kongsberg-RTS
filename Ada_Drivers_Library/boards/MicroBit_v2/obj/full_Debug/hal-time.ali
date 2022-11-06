@@ -1,0 +1,83 @@
+V "GNAT Lib v2021"
+A -O0
+A -gnatA
+A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -gnata
+A -fcallgraph-info=su
+A -fcallgraph-info=su
+A -g
+A -gnatwa
+A -gnatw_A
+A -gnatQ
+A -gnatw.X
+A -ffunction-sections
+A -fdata-sections
+A -march=armv7e-m+fp
+P DB ZX
+
+RN
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U hal.time%s		hal-time.ads		de6b94d9 EE OO PF PK IU
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W hal%s			hal.ads			hal.ali
+Z system%s		system.ads		system.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+
+D ada.ads		20220915114630 76789da1 ada%s
+D a-except.ads		20220915114630 946f3014 ada.exceptions%s
+D a-finali.ads		20220915114630 bf4f806b ada.finalization%s
+D a-stream.ads		20220915114630 119b8fb3 ada.streams%s
+D a-string.ads		20220915114630 90ac6797 ada.strings%s
+D a-sttebu.ads		20220915114630 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220915114630 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20220915114630 9eaa38c6 ada.tags%s
+D a-unccon.ads		20220915114630 0e9b276f ada.unchecked_conversion%s
+D hal.ads		20220915114910 2b42c80e hal%s
+D hal-time.ads		20220915114910 f5295cd7 hal.time%s
+D interfac.ads		20220915114630 edec285f interfaces%s
+D system.ads		20220915114630 ad54c63c system%s
+D s-finmas.ads		20220915114630 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20220915114630 4ff27390 system.finalization_root%s
+D s-parame.ads		20220915114630 8e90778f system.parameters%s
+D s-pooglo.ads		20220915114630 ede33ef8 system.pool_global%s
+D s-putima.ads		20220915114630 4e095881 system.put_images%s
+D s-stalib.ads		20220915114630 472fbca8 system.standard_library%s
+D s-stoele.ads		20220915114630 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20220915114630 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20220915114630 e9fa2dd8 system.storage_pools%s
+D s-traent.ads		20220915114630 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20220915114630 2b077493 system.unsigned_types%s
+D unchconv.ads		20220915114630 ca2f9e18 unchecked_conversion%s
+G a e
+X 10 hal.ads
+34K9*HAL 166e8 11|32r9 46r5
+X 11 hal-time.ads
+32K13*Time 10|34k9 11|46l9 46e13
+34h9*Delays 36r34 38p14 38r48 41p14 41r48 44p14 44r48
+36P9*Any_Delays(34R9)
+38x14*Delay_Microseconds 38=34 39>34
+38r34 This{34R9}
+39i34 Us{integer}
+41x14*Delay_Milliseconds 41=34 42>34
+41r34 This{34R9}
+42i34 Ms{integer}
+44x14*Delay_Seconds 44=34 45>34
+44r34 This{34R9}
+45i34 S{integer}
+

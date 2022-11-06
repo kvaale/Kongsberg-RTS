@@ -1,0 +1,79 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\zfp-cortex-m4f\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -g
+A -g
+A -gnatQ
+A -gnata
+A -march=armv7e-m+fp
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U main%b		main.adb		b5c581ff NE OO SU
+W microbit%s		microbit.ads		microbit.ali
+W microbit.ios%s	microbit-ios.adb	microbit-ios.ali
+
+D ada.ads		20210520153144 76789da1 ada%s
+D a-tags.ads		20210520153144 28a53e33 ada.tags%s
+D hal.ads		20220915114910 2b42c80e hal%s
+D hal-gpio.ads		20220915114910 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20220915114910 0ed73138 hal.i2c%s
+D hal-spi.ads		20220915114910 fe139819 hal.spi%s
+D hal-uart.ads		20220915114910 d58316b4 hal.uart%s
+D interfac.ads		20210520153144 edec285f interfaces%s
+D main.adb		20221103102350 2a7d56bc main%b
+D microbit.ads		20221020091824 3b54a3e8 microbit%s
+D microbit-ios.ads	20221103102350 a4ec74ab microbit.ios%s
+D nrf.ads		20220915114910 74cf72f5 nrf%s
+D nrf-device.ads	20220915114910 9c9916c4 nrf.device%s
+D nrf-gpio.ads		20220915114910 ab6d4598 nrf.gpio%s
+D nrf-rtc.ads		20220915114910 36d88130 nrf.rtc%s
+D nrf-spi_master.ads	20220915114910 a8ff49a3 nrf.spi_master%s
+D nrf-timers.ads	20221020091824 15fa58e3 nrf.timers%s
+D nrf-twi.ads		20220915114910 4881713f nrf.twi%s
+D nrf-uart.ads		20220915114910 9fa4b8b9 nrf.uart%s
+D nrf_svd.ads		20220915114910 87ba21d7 nrf_svd%s
+D nrf_svd-rtc.ads	20220915114910 57c7ffc8 nrf_svd.rtc%s
+D nrf_svd-spi.ads	20220915114910 6e2ffb69 nrf_svd.spi%s
+D nrf_svd-timer.ads	20220915114910 ba50db1c nrf_svd.timer%s
+D nrf_svd-twi.ads	20220915114910 68301534 nrf_svd.twi%s
+D nrf_svd-uart.ads	20220915114910 83bcebc8 nrf_svd.uart%s
+D system.ads		20210520153144 42e16c16 system%s
+D s-stoele.ads		20210520153144 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20210520153144 2b077493 system.unsigned_types%s
+G a e
+G c Z b b [main standard 34 11 none]
+G r c none [main standard 34 11 none] [set_analog_period_us microbit__ios 60 14 none]
+G r c none [main standard 34 11 none] [set microbit__ios 52 14 none]
+G r c none [main standard 34 11 none] [write microbit__ios 64 14 none]
+X 4 hal-gpio.ads
+47h9*GPIO_Point
+X 5 hal-i2c.ads
+48h9*I2C_Port
+X 6 hal-spi.ads
+48h9*SPI_Port
+X 7 hal-uart.ads
+48h9*UART_Port
+X 9 main.adb
+34U11*Main 34b11 73l5 73t9
+35i4 Speed{11|58I9} 67r27 68r27
+36b4 Forward{boolean} 51r24 52r28 55r24 56r28 60r25 61r29 64r25 65r29
+X 10 microbit.ads
+57K9*MicroBit 9|31r6 31r24 32w6 35r21 51r4 52r4 55r4 56r4 60r4 61r4 64r4
+. 65r4 67r4 68r4 10|111e13
+X 11 microbit-ios.ads
+34K18*IOs 9|31w15 31r33 35r30 51r13 52r13 55r13 56r13 60r13 61r13 64r13 65r13
+. 67r13 68r13 11|112e17
+52U14*Set 9|51s17 52s17 55s17 56s17 60s17 61s17 64s17 65s17
+58I9*Analog_Value<short_integer> 9|35r34
+60U14*Set_Analog_Period_Us 9|47s4
+64U14*Write 9|67s17 68s17
+

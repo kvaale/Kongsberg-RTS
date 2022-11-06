@@ -1,0 +1,131 @@
+graph: { title: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb"
+edge: { sourcename: "nrf__twi__Ttwi_masterCFD"
+  targetname: "-9:nrf__twi__twi_master,nrf__twi__twi_master"
+  label: "nrf-twi.ads:41:9"
+}
+class {
+  classname: "nrf__twi__twi_master"
+  label: "nrf__twi__twi_master\nrf-twi.ads:41:9"
+  parent: "hal__i2c__i2c_port"
+  virtuals: "1:nrf__twi__master_transmit,1:hal__i2c__i2c_port\n
+             2:nrf__twi__master_receive,2:hal__i2c__i2c_port\n
+             3:nrf__twi__mem_write,3:hal__i2c__i2c_port\n
+             4:nrf__twi__mem_read,4:hal__i2c__i2c_port\n
+             -1:nrf__twi___size__2,-1:hal__i2c__i2c_port\n
+             -10:nrf__twi__twi_masterPI__2,-10:hal__i2c__i2c_port\n
+             -2:nrf__twi__twi_masterSR__2,-2:hal__i2c__i2c_port\n
+             -3:nrf__twi__twi_masterSW__2,-3:hal__i2c__i2c_port\n
+             -4:nrf__twi__twi_masterSI__2,-4:hal__i2c__i2c_port\n
+             -5:nrf__twi__twi_masterSO__2,-5:hal__i2c__i2c_port\n
+             -9:nrf__twi__twi_masterDF__2,-9:hal__i2c__i2c_port\n
+             5:nrf__twi__enable\n
+             6:nrf__twi__disable\n
+             7:nrf__twi__enabled\n
+             8:nrf__twi__configure\n
+             9:nrf__twi__disconnect\n
+             -6:nrf__twi__Oeq\n
+             -7:nrf__twi___assign\n
+             -8:nrf__twi__twi_masterDA"
+}
+node: { title: "nrf__twi__twi_masterIP" label: "Twi_Masterip\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9\n24 bytes (static)" }
+node: { title: "nrf__twi___size__2" label: "Twi\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9\n16 bytes (static)" }
+node: { title: "nrf__twi__twi_masterPI__2" label: "Twi_Masterpi\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9\n16 bytes (static)" }
+node: { title: "system__put_images__put_image_unknown" label: "Put_Image_Unknown\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-putima.ads:106:14" shape : ellipse }
+edge: { sourcename: "nrf__twi__twi_masterPI__2" targetname: "system__put_images__put_image_unknown" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+node: { title: "nrf__twi__twi_masterSR__2" label: "Twi_Mastersr\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9\n24 bytes (static)" }
+node: { title: "system__stream_attributes__i_b" label: "I_B\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-stratt.ads:109:13" shape : ellipse }
+edge: { sourcename: "nrf__twi__twi_masterSR__2" targetname: "system__stream_attributes__i_b" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+node: { title: "nrf__twi__twi_masterSW__2" label: "Twi_Mastersw\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9\n24 bytes (static)" }
+node: { title: "system__stream_attributes__w_b" label: "W_B\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-stratt.ads:147:14" shape : ellipse }
+edge: { sourcename: "nrf__twi__twi_masterSW__2" targetname: "system__stream_attributes__w_b" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+node: { title: "nrf__twi__twi_masterSI__2" label: "Twi_Mastersi\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9\n40 bytes (static)" }
+node: { title: "system__stream_attributes__i_as" label: "I_As\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-stratt.ads:108:13" shape : ellipse }
+edge: { sourcename: "nrf__twi__twi_masterSI__2" targetname: "system__stream_attributes__i_as" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+edge: { sourcename: "nrf__twi__twi_masterSI__2" targetname: "nrf__twi__twi_masterIP" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+edge: { sourcename: "nrf__twi__twi_masterSI__2" targetname: "nrf__twi__twi_masterSR__2" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+node: { title: "system__secondary_stack__ss_allocate" label: "Ss_Allocate\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-secsta.ads:58:14" shape : ellipse }
+edge: { sourcename: "nrf__twi__twi_masterSI__2" targetname: "system__secondary_stack__ss_allocate" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+node: { title: "nrf__twi__twi_masterSO__2" label: "Twi_Masterso\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9\n32 bytes (static)" }
+node: { title: "system__stream_attributes__w_as" label: "W_As\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-stratt.ads:146:14" shape : ellipse }
+edge: { sourcename: "nrf__twi__twi_masterSO__2" targetname: "system__stream_attributes__w_as" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+edge: { sourcename: "nrf__twi__twi_masterSO__2" targetname: "nrf__twi__twi_masterSW__2" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+node: { title: "nrf__twi__Oeq" label: "=\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:4\n16 bytes (static)" }
+node: { title: "nrf__twi___assign" label: "Twi\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9\n448 bytes (static)" }
+node: { title: "__gnat_rcheck_CE_Discriminant_Check" label: "gnat_rcheck_CE_Discriminant_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__twi___assign" targetname: "__gnat_rcheck_CE_Discriminant_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+node: { title: "nrf__twi__twi_masterDA" label: "Twi_Masterda\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9\n16 bytes (static)" }
+node: { title: "nrf__twi__twi_masterDF__2" label: "Twi_Masterdf\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9\n16 bytes (static)" }
+node: { title: "nrf__twi__Ttwi_masterCFD" label: "Ttwi_Mastercfd\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:41:9\n32 bytes (static)" }
+node: { title: "__indirect_call" label: "Indirect Call Placeholder" shape : ellipse }
+edge: { sourcename: "nrf__twi__Ttwi_masterCFD" targetname: "__indirect_call" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:41:9" }
+node: { title: "nrf__twi__finalize_spec" label: "Finalize_Spec\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:37:1\n8 bytes (static)" }
+node: { title: "ada__tags__unregister_tag" label: "Unregister_Tag\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\a-tags.ads:589:14" shape : ellipse }
+edge: { sourcename: "nrf__twi__finalize_spec" targetname: "ada__tags__unregister_tag" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:37:1" }
+node: { title: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:nrf__twi__stop_sequence" label: "Stop_Sequence\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:42:4\n16 bytes (static)" }
+node: { title: "nrf__twi__enable" label: "Enable\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:59:4\n16 bytes (static)" }
+node: { title: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "gnat_rcheck_PE_Access_Before_Elaboration\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__twi__enable" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:59:4" }
+node: { title: "nrf__twi__disable" label: "Disable\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:68:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__twi__disable" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:68:4" }
+node: { title: "nrf__twi__enabled" label: "Enabled\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:77:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__twi__enabled" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:77:4" }
+node: { title: "nrf__twi__configure" label: "Configure\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:86:4\n24 bytes (static)" }
+edge: { sourcename: "nrf__twi__configure" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:86:4" }
+node: { title: "__gnat_rcheck_CE_Invalid_Data" label: "gnat_rcheck_CE_Invalid_Data\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__twi__configure" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:94:38" }
+node: { title: "nrf__twi__disconnect" label: "Disconnect\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:104:4\n16 bytes (static)" }
+edge: { sourcename: "nrf__twi__disconnect" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:104:4" }
+node: { title: "nrf__twi__master_transmit" label: "Master_Transmit\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:114:15\n64 bytes (static)" }
+edge: { sourcename: "nrf__twi__master_transmit" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:114:15" }
+edge: { sourcename: "nrf__twi__master_transmit" targetname: "nrf__twi__enabled" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:64:18" }
+node: { title: "system__assertions__raise_assert_failure" label: "Raise_Assert_Failure\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\s-assert.ads:48:14" shape : ellipse }
+edge: { sourcename: "nrf__twi__master_transmit" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:64:18" }
+node: { title: "__gnat_rcheck_CE_Overflow_Check" label: "gnat_rcheck_CE_Overflow_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__twi__master_transmit" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:122:37" }
+node: { title: "nrf_svd__twi__errorsrc_registerIP" label: "ERRORSRC_REGISTERIP\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\svd\nrf52\nrf_svd-twi.ads:524:9" shape : ellipse }
+edge: { sourcename: "nrf__twi__master_transmit" targetname: "nrf_svd__twi__errorsrc_registerIP" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:124:7" }
+node: { title: "__gnat_rcheck_CE_Range_Check" label: "gnat_rcheck_CE_Range_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__twi__master_transmit" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:135:50" }
+node: { title: "__gnat_rcheck_CE_Index_Check" label: "gnat_rcheck_CE_Index_Check\n<built-in>" shape : ellipse }
+edge: { sourcename: "nrf__twi__master_transmit" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:138:30" }
+edge: { sourcename: "nrf__twi__master_transmit" targetname: "__gnat_rcheck_CE_Index_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:168:33" }
+edge: { sourcename: "nrf__twi__master_transmit" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:169:25" }
+edge: { sourcename: "nrf__twi__master_transmit" targetname: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:nrf__twi__stop_sequence" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:173:10" }
+node: { title: "nrf__twi__master_receive" label: "Master_Receive\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:184:15\n48 bytes (static)" }
+edge: { sourcename: "nrf__twi__master_receive" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:184:15" }
+edge: { sourcename: "nrf__twi__master_receive" targetname: "nrf__twi__enabled" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:73:18" }
+edge: { sourcename: "nrf__twi__master_receive" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:73:18" }
+edge: { sourcename: "nrf__twi__master_receive" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:202:50" }
+edge: { sourcename: "nrf__twi__master_receive" targetname: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:nrf__twi__stop_sequence" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:228:16" }
+edge: { sourcename: "nrf__twi__master_receive" targetname: "__gnat_rcheck_CE_Overflow_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:240:31" }
+node: { title: "nrf__twi__mem_write" label: "Mem_Write\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:258:15\n64 bytes (static)" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:258:15" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "nrf__twi__enabled" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:84:18" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:84:18" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:271:12" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:274:59" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "nrf__twi__master_transmit" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:273:17" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:279:54" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:280:63" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "nrf__twi__master_transmit" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:278:17" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:nrf__twi__stop_sequence" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:289:14" }
+edge: { sourcename: "nrf__twi__mem_write" targetname: "nrf__twi__master_transmit" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:293:11" }
+node: { title: "nrf__twi__mem_read" label: "Mem_Read\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:303:15\n64 bytes (static)" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "__gnat_rcheck_PE_Access_Before_Elaboration" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:303:15" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "nrf__twi__enabled" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:95:18" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "system__assertions__raise_assert_failure" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:95:18" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "__gnat_rcheck_CE_Invalid_Data" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:315:12" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:318:59" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "nrf__twi__master_transmit" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:317:17" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:323:54" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "__gnat_rcheck_CE_Range_Check" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:324:63" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "nrf__twi__master_transmit" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:322:17" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:nrf__twi__stop_sequence" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:332:14" }
+edge: { sourcename: "nrf__twi__mem_read" targetname: "nrf__twi__master_receive" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:336:11" }
+node: { title: "nrf__twi___elabb" label: "Twi\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.adb:34:1\n4 bytes (static)" }
+node: { title: "nrf__twi___elabs" label: "Twi\nC:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:37:1\n8 bytes (static)" }
+node: { title: "ada__tags__check_tsd" label: "Check_Tsd\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\a-tags.ads:466:14" shape : ellipse }
+edge: { sourcename: "nrf__twi___elabs" targetname: "ada__tags__check_tsd" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+node: { title: "ada__tags__register_tag" label: "Register_Tag\nC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\gnat\a-tags.ads:553:14" shape : ellipse }
+edge: { sourcename: "nrf__twi___elabs" targetname: "ada__tags__register_tag" label: "C:\Users\aadne\Documents\GitHub\Kongsberg-RTS\Ada_Drivers_Library\arch\ARM\Nordic\drivers\nrf_common\nrf-twi.ads:99:9" }
+}

@@ -1,0 +1,5 @@
+graph: { title: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\text_scrolling\src\main.adb"
+node: { title: "_ada_main" label: "Main\nC:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\text_scrolling\src\main.adb:33:1\n8 bytes (static)" }
+node: { title: "microbit__display__display__2" label: "Display\nC:\Users\aadne\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-display.ads:51:14" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__display__display__2" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\text_scrolling\src\main.adb:36:25" }
+}

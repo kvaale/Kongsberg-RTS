@@ -1,0 +1,6 @@
+procedure Main is
+
+begin
+   Microbit.IOsForTasking.Set
+   null;
+end Main;

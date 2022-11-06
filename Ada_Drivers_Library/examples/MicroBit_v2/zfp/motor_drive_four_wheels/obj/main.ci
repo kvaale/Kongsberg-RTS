@@ -1,0 +1,17 @@
+graph: { title: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb"
+node: { title: "_ada_main" label: "Main\nC:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:34:1\n16 bytes (static)" }
+node: { title: "microbit__ios__set_analog_period_us" label: "Set_Analog_Period_Us\nC:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-ios.ads:60:14" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set_analog_period_us" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:40:16" }
+node: { title: "microbit__ios__set" label: "Set\nC:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-ios.ads:52:14" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:44:16" }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:45:16" }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:48:16" }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:49:16" }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:53:16" }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:54:16" }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:57:16" }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:58:16" }
+node: { title: "microbit__ios__write" label: "Write\nC:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-ios.ads:64:14" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__write" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:60:16" }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__write" label: "C:\Users\aadne\Documents\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\motor_drive_four_wheels\src\main.adb:61:16" }
+}

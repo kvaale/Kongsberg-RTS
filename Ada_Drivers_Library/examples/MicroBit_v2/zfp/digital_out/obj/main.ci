@@ -1,0 +1,9 @@
+graph: { title: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\digital_out\src\main.adb"
+node: { title: "_ada_main" label: "Main\nC:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\digital_out\src\main.adb:36:1\n8 bytes (static)" }
+node: { title: "microbit__ios__set" label: "Set\nC:\Users\aadne\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-ios.ads:52:14" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\digital_out\src\main.adb:40:19" }
+node: { title: "microbit__time__delay_ms" label: "Delay_Ms\nC:\Users\aadne\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-time.ads:41:14" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__time__delay_ms" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\digital_out\src\main.adb:43:20" }
+edge: { sourcename: "_ada_main" targetname: "microbit__ios__set" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\digital_out\src\main.adb:46:19" }
+edge: { sourcename: "_ada_main" targetname: "microbit__time__delay_ms" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\digital_out\src\main.adb:49:20" }
+}

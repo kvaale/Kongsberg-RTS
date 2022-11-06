@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\ravenscar\text_scrollling\text_scrolling.gpr
+20220915114910 3e052ae59363c27d7ca90380506a9455
+C:\Users\aadne\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr
+20220915114910 132078795850b5440c0e933d393788c6
+[BOUND OBJECT FILES]
+C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\ravenscar\text_scrollling\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\ravenscar\text_scrollling\obj\
+-LC:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\ravenscar\text_scrollling\obj\
+-LC:\Users\aadne\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
+-LC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
+-static
+-static-libgcc
+C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\libgnarl.a
+C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\libgnat.a

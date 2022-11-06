@@ -1,0 +1,18 @@
+graph: { title: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb"
+node: { title: "_ada_main" label: "Main\nC:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:39:1\n32 bytes (static)" }
+node: { title: "microbit__buttons__state" label: "State\nC:\Users\aadne\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-buttons.ads:37:13" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__buttons__state" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:42:26" }
+node: { title: "microbit__display__display" label: "Display\nC:\Users\aadne\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-display.ads:45:14" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__display__display" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:43:26" }
+node: { title: "microbit__console__put_line" label: "Put_Line\nC:\Users\aadne\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-console.ads:43:14" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__console__put_line" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:44:10" }
+edge: { sourcename: "_ada_main" targetname: "microbit__buttons__state" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:45:29" }
+edge: { sourcename: "_ada_main" targetname: "microbit__display__display" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:46:26" }
+edge: { sourcename: "_ada_main" targetname: "microbit__console__put_line" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:47:10" }
+edge: { sourcename: "_ada_main" targetname: "microbit__buttons__state" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:48:29" }
+node: { title: "microbit__display__symbols__heart" label: "Heart\nC:\Users\aadne\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-display-symbols.ads:45:14" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__display__symbols__heart" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:49:25" }
+edge: { sourcename: "_ada_main" targetname: "microbit__console__put_line" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:50:10" }
+node: { title: "microbit__display__clear__2" label: "Clear\nC:\Users\aadne\git-repos\Ada_Drivers_Library\boards\MicroBit_v2\src\zfp\microbit-display.ads:42:14" shape : ellipse }
+edge: { sourcename: "_ada_main" targetname: "microbit__display__clear__2" label: "C:\Users\aadne\git-repos\Ada_Drivers_Library\examples\MicroBit_v2\zfp\buttons\src\main.adb:52:26" }
+}
