@@ -9,11 +9,11 @@ with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 
 package body taskRecieve is
    protected body Obj is
-      procedure Set (Var : Integer) is
+      procedure Set (Var : Radio.RadioData) is
       begin
          RxData := Var;
       end Set;
-      function Get return Integer is
+      function Get return Radio.RadioData is
       begin
          return RxData;
       end Get;
@@ -28,7 +28,7 @@ package body taskRecieve is
          TxData.Group := 1;
          TxData.Protocol := 14;
 
-         Radio.Setup(RadioFrequency => 2407,
+         Radio.Setup(RadioFrequency => 2469,
                      Length => TxData.Length,
                      Version => TxData.Version,
                      Group => TxData.Group,
@@ -41,13 +41,9 @@ package body taskRecieve is
          myClock := Clock;
 
          loop
-            --  --check if some data received and if so print it. Note that the framebuffer can max contain x messages (currently set to 4).
-            --important! Sometimes data received contains junk since we dont do any package verification and radio transmission is noisy!
             while Radio.DataReady loop
                RxData := Radio.Receive;
-               Obj.Set(Integer(RxData.Payload(1)));
-               Put("Raven Received D1: " & UInt8'Image(RxData.Payload(1)));
-               Put_Line(" D2: " & UInt8'Image(RxData.Payload(2)));
+               Obj.Set(RxData);
             end loop;
          end loop;
          delay until myClock + Milliseconds(200); --random period
@@ -58,15 +54,35 @@ package body taskRecieve is
 
 
    task body Drive is
-      Speed : Analog_Value := 512; --between 0 and 1023
+      Speed : Integer := 512; --between 0 and 1023
+      Turn : Integer := 512;
+      L : Integer := 512;
+      R : Integer := 512;
       Forward : constant Boolean := True; -- forward is true, backward is false
       myClock : Time;
    begin
       Set_Analog_Period_Us(20000); -- 50 Hz = 1/50 = 0.02s = 20 ms = 20000us
       loop
          myClock := Clock;
-         Speed := Analog_Value(4*(Obj.Get));
-         Put_Line("Speed is: " & Analog_Value'Image(Speed));
+         Speed := 4*Integer((Obj.Get.Payload(1)));
+         Turn := 4*Integer((Obj.Get.Payload(2)));
+
+         R := Speed * Turn/512;
+         L := Speed * ((1024-Turn)/512);
+
+         if L > 1023 then
+            L := 1013;
+         end if;
+
+         if R > 1023 then
+            R := 1023;
+         end if;
+
+
+         --  Put("Speed is: " & Integer'Image(Speed));
+         --  Put_Line(" Turn is: " & Integer'Image(Turn));
+         Put("L: " & Integer'Image(L));
+         Put_Line(" R: " & Integer'Image(R));
 
          --LEFT
          --front
@@ -86,8 +102,8 @@ package body taskRecieve is
          Set(14, Forward); --IN3
          Set(15, not Forward); --IN4
 
-         Write (0, Speed); --left speed control ENA ENB
-         Write (1, Speed); --right speed control ENA ENB
+         Write (0, Analog_Value(L)); --left speed control ENA ENB
+         Write (1, Analog_Value(R)); --right speed control ENA ENB
          delay until myClock + Milliseconds(200);
       end loop;
    end Drive;

@@ -6,10 +6,10 @@ package taskRecieve is
    task Drive with Priority => 2;
 
    protected Obj is
-      procedure Set (Var : Integer);
-      function Get return Integer;
+      procedure Set (Var : Radio.RadioData);
+      function Get return Radio.RadioData;
    private
-      RxData : Integer;
+      RxData : Radio.RadioData;
    end Obj;
 
 end taskRecieve;
