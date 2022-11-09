@@ -46,7 +46,8 @@ package body taskRecieve is
                Obj.Set(RxData);
             end loop;
          end loop;
-         delay until myClock + Milliseconds(200); --random period
+
+         delay until myClock + Milliseconds(500); --random period
       end loop;
    end Recieve;
 
@@ -58,17 +59,23 @@ package body taskRecieve is
       Turn : Integer := 512;
       L : Integer := 512;
       R : Integer := 512;
-      Forward : constant Boolean := True; -- forward is true, backward is false
+      Forward : Boolean := True; -- forward is true, backward is false
       myClock : Time;
    begin
       Set_Analog_Period_Us(20000); -- 50 Hz = 1/50 = 0.02s = 20 ms = 20000us
       loop
          myClock := Clock;
+
          Speed := 4*Integer((Obj.Get.Payload(1)));
          Turn := 4*Integer((Obj.Get.Payload(2)));
 
-         R := Speed * Turn/512;
-         L := Speed * ((1024-Turn)/512);
+         --  if Speed > 511 then
+            L := Speed * ((1024-Turn)/512);
+            R := Speed * Turn/512;
+         --  else
+         --  L := (1024/(Speed * ((1024-Turn)/512)));
+         --  R := (1024/(Speed * Turn/512));
+         --  end if;
 
          if L > 1023 then
             L := 1013;
@@ -76,7 +83,7 @@ package body taskRecieve is
 
          if R > 1023 then
             R := 1023;
-         end if;
+            end if;
 
 
          --  Put("Speed is: " & Integer'Image(Speed));
@@ -104,7 +111,8 @@ package body taskRecieve is
 
          Write (0, Analog_Value(L)); --left speed control ENA ENB
          Write (1, Analog_Value(R)); --right speed control ENA ENB
-         delay until myClock + Milliseconds(200);
+
+         delay until myClock + Milliseconds(500);
       end loop;
    end Drive;
 
