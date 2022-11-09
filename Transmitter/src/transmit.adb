@@ -7,17 +7,17 @@ with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 
 package body transmit is
    procedure sendBuf is
-      RXdata : Radio.RadioData;
+      --  RxData : Radio.RadioData;
       TxData : Radio.RadioData;
-      xVal : Analog_Value;
-      yVal : Analog_Value;
+      yVal : UInt8;
+      xVal : UInt8;
    begin
       TxData.Length := 5;
       TxData.Version:= 12;
       TxData.Group := 1;
       TxData.Protocol := 14;
 
-      Radio.Setup(RadioFrequency => 2407,
+      Radio.Setup(RadioFrequency => 2469,
                   Length => TxData.Length,
                   Version => TxData.Version,
                   Group => TxData.Group,
@@ -26,15 +26,14 @@ package body transmit is
       Radio.StartReceiving;
       Put_Line(Radio.State); -- this should report Status: 3, meaning in RX mode
       loop
-         xVal := (Analog(4))/4;
-         yVal := (Analog(10))/4;
-
-         TxData.Payload(1) := UInt8(xVal);
-         TxData.Payload(2) := UInt8(yVal);
-         Put("Transmit D1: " & UInt8'Image(TXdata.Payload(1)));
-         Put_Line(" D2: " & UInt8'Image(TXdata.Payload(2)));
+         yVal := UInt8((Analog(10))/4);
+         xVal := UInt8((Analog(4))/4);
+         TxData.Payload(1) := yVal;
+         TxData.Payload(2) := xVal;
+         --  Put("Transmit D1: " & UInt8'Image(TXdata.Payload(1)));
+         --  Put_Line(" D2: " & UInt8'Image(TXdata.Payload(2)));
          Radio.Transmit(TXdata);
-         delay(0.2);
+         --  delay(0.2);
       end loop;
    end sendBuf;
 end transmit;
