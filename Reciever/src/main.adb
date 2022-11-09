@@ -1,8 +1,7 @@
-with recieve;
-
-procedure Main is
+with taskRecieve;
+procedure Main with Priority => 0 is
 begin
-   recieve.writeBuf;
-   -- hoyhoy
-   null;
+   loop
+      null;
+   end loop;
 end Main;
