@@ -6,33 +6,35 @@ with nRF.Radio;
 use MicroBit;
 with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 
-
 package body taskRecieve is
    protected body Obj is
-      procedure Set (Var : Radio.RadioData) is
+
+      procedure Set (Var : nRF.Radio.Payload_Data) is
       begin
-         RxData := Var;
+         RxDataPayload := Var;
       end Set;
-      function Get return Radio.RadioData is
+
+      function Get return nRF.Radio.Payload_Data is
       begin
-         return RxData;
+         return RxDataPayload;
       end Get;
+
    end Obj;
    task body Recieve is
       myClock : Time;
       RxData : Radio.RadioData;
-      TxData : Radio.RadioData;
+      --  TxData : Radio.RadioData;
    begin
-         TxData.Length := 5;
-         TxData.Version:= 12;
-         TxData.Group := 1;
-         TxData.Protocol := 14;
+         --  TxData.Length := 5;
+         --  TxData.Version:= 12;
+         --  TxData.Group := 1;
+         --  TxData.Protocol := 14;
 
          Radio.Setup(RadioFrequency => 2469,
-                     Length => TxData.Length,
-                     Version => TxData.Version,
-                     Group => TxData.Group,
-                     Protocol => TxData.Protocol);
+                     Length => 5,
+                     Version => 12,
+                     Group => 1,
+                     Protocol => 14);
 
          Radio.StartReceiving;
          Put_Line("Radio state: ");
@@ -43,7 +45,7 @@ package body taskRecieve is
          loop
             while Radio.DataReady loop
                RxData := Radio.Receive;
-               Obj.Set(RxData);
+               Obj.Set(RxData.Payload);
             end loop;
          end loop;
          delay until myClock + Milliseconds(200); --random period
@@ -64,8 +66,8 @@ package body taskRecieve is
       Set_Analog_Period_Us(20000); -- 50 Hz = 1/50 = 0.02s = 20 ms = 20000us
       loop
          myClock := Clock;
-         Speed := 4*Integer((Obj.Get.Payload(1)));
-         Turn := 4*Integer((Obj.Get.Payload(2)));
+         Speed := 4*Integer((Obj.Get(1)));
+         Turn := 4*Integer((Obj.Get(2)));
 
          R := Speed * Turn/512;
          L := Speed * ((1024-Turn)/512);
