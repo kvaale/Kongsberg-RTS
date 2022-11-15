@@ -7,10 +7,10 @@ with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 
 package body transmit is
    procedure sendBuf is
-      --  RxData : Radio.RadioData;
       TxData : Radio.RadioData;
       yVal : UInt8;
       xVal : UInt8;
+      Dir : UInt8;
    begin
       TxData.Length := 5;
       TxData.Version:= 12;
@@ -28,12 +28,27 @@ package body transmit is
       loop
          yVal := UInt8((Analog(10))/4);
          xVal := UInt8((Analog(4))/4);
-         TxData.Payload(1) := yVal;
-         TxData.Payload(2) := xVal;
-         --  Put("Transmit D1: " & UInt8'Image(TXdata.Payload(1)));
-         --  Put_Line(" D2: " & UInt8'Image(TXdata.Payload(2)));
-         Radio.Transmit(TXdata);
-         --  delay(0.2);
+
+         Put("yVal: " & UInt8'Image(yVal));
+         if yVal > 127 then
+            yVal := 2*(yVal-127);
+            Dir := 1;
+         else
+            yVal := 2*(-yVal+127);
+            Dir := 0;
+         end if;
+
+
+         TxData.Payload(1) := yVal;  -- Speed
+         TxData.Payload(2) := xVal;  -- Turn rate
+         TxData.Payload(3) := Dir;   -- Direction, 1 is Forward
+         TxData.Payload(4) := 0;     -- Driving mode
+
+         Put(" Transmit D1: " & UInt8'Image(TxData.Payload(1)));
+         Put_Line(" D2: " & UInt8'Image(TxData.Payload(2)));
+
+         Radio.Transmit(TxData);
+         delay(0.2);
       end loop;
    end sendBuf;
 end transmit;
