@@ -12,7 +12,7 @@ package body transmit is
       xVal : UInt8;
       Dir : UInt8;
    begin
-      TxData.Length := 5;
+      TxData.Length := 10;
       TxData.Version:= 12;
       TxData.Group := 1;
       TxData.Protocol := 14;
@@ -42,8 +42,9 @@ package body transmit is
          TxData.Payload(1) := yVal;  -- Speed
          TxData.Payload(2) := xVal;  -- Turn rate
          TxData.Payload(3) := Dir;   -- Direction, 1 is Forward
-         TxData.Payload(4) := 0;     -- Driving mode
+         TxData.Payload(4) := 1;     -- Driving mode
 
+         Put(" Mode: " & UInt8'Image(TxData.Payload(3)));
          Put(" Transmit D1: " & UInt8'Image(TxData.Payload(1)));
          Put_Line(" D2: " & UInt8'Image(TxData.Payload(2)));
 
