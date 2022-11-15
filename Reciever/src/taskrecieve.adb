@@ -23,7 +23,7 @@ package body taskRecieve is
       RxData : Radio.RadioData;
       TxData : Radio.RadioData;
    begin
-         TxData.Length := 5;
+         TxData.Length := 10;
          TxData.Version:= 12;
          TxData.Group := 1;
          TxData.Protocol := 14;
@@ -36,7 +36,7 @@ package body taskRecieve is
 
          Radio.StartReceiving;
          Put_Line("Radio state: ");
-         Put_Line(Radio.State); -- this should report Status: 3, meaning in RX mode
+      Put_Line(Radio.State); -- this should report Status: 3, meaning in RX mode
       loop
          myClock := Clock;
 
@@ -50,8 +50,6 @@ package body taskRecieve is
          delay until myClock + Milliseconds(500); --random period
       end loop;
    end Recieve;
-
-
 
 
    task body Drive is
@@ -76,6 +74,12 @@ package body taskRecieve is
          --  L := (1024/(Speed * ((1024-Turn)/512)));
          --  R := (1024/(Speed * Turn/512));
          --  end if;
+
+         if Obj.Get.Payload(3) = 1 then
+            Forward := True;
+         else
+            Forward := False;
+            end if;
 
          if L > 1023 then
             L := 1013;
