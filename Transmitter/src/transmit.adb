@@ -29,7 +29,6 @@ package body transmit is
          yVal := UInt8((Analog(10))/4);
          xVal := UInt8((Analog(4))/4);
 
-         Put("yVal: " & UInt8'Image(yVal));
          if yVal > 127 then
             yVal := 2*(yVal-127);
             Dir := 1;
@@ -44,12 +43,7 @@ package body transmit is
          TxData.Payload(3) := Dir;   -- Direction, 1 is Forward
          TxData.Payload(4) := 1;     -- Driving mode
 
-         Put(" Mode: " & UInt8'Image(TxData.Payload(3)));
-         Put(" Transmit D1: " & UInt8'Image(TxData.Payload(1)));
-         Put_Line(" D2: " & UInt8'Image(TxData.Payload(2)));
-
          Radio.Transmit(TxData);
-         delay(0.2);
       end loop;
    end sendBuf;
 end transmit;

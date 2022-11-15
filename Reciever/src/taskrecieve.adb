@@ -8,16 +8,19 @@ with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 
 
 package body taskRecieve is
+
    protected body Obj is
       procedure Set (Var : Radio.RadioData) is
       begin
          RxData := Var;
       end Set;
+
       function Get return Radio.RadioData is
       begin
          return RxData;
       end Get;
    end Obj;
+
    task body Recieve is
       myClock : Time;
       RxData : Radio.RadioData;
@@ -47,7 +50,7 @@ package body taskRecieve is
             end loop;
          end loop;
 
-         delay until myClock + Milliseconds(500); --random period
+         delay until myClock + Milliseconds(2); --random period
       end loop;
    end Recieve;
 
@@ -116,7 +119,7 @@ package body taskRecieve is
          Write (0, Analog_Value(L)); --left speed control ENA ENB
          Write (1, Analog_Value(R)); --right speed control ENA ENB
 
-         delay until myClock + Milliseconds(500);
+         delay until myClock + Milliseconds(2);
       end loop;
    end Drive;
 
