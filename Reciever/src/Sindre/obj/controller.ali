@@ -1,0 +1,353 @@
+V "GNAT Lib v2021"
+A -gnatA
+A --RTS=C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\
+A -mlittle-endian
+A -mthumb
+A -mfloat-abi=hard
+A -mfpu=fpv4-sp-d16
+A -mcpu=cortex-m4
+A -march=armv7e-m+fp
+P DB LC TF  SS ZX
+
+RN
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_ENUMERATION_MAPS
+RV NO_FIXED_POINT
+RV NO_PROTECTED_TYPES
+RV NO_RELATIVE_DELAY
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASKING
+RV STATIC_PRIORITIES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV MAX_TASKS=3
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U controller%b		controller.adb		63298ba5 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+Z ada.real_time.delays%s  a-retide.adb		a-retide.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W hal%s			hal.ads			hal.ali
+W microbit%s		microbit.ads		microbit.ali
+W microbit.console%s	microbit-console.adb	microbit-console.ali  AD
+W microbit.iosfortasking%s  microbit-iosfortasking.adb  microbit-iosfortasking.ali  AD
+W microbit.radio%s	microbit-radio.adb	microbit-radio.ali  AD
+W nrf%s			nrf.ads			nrf.ali
+W nrf.radio%s		nrf-radio.adb		nrf-radio.ali
+W sensordata%s		sensordata.adb		sensordata.ali  AD
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.relative_delays%s  s-reldel.adb	s-reldel.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
+W ultrasonic%s		ultrasonic.adb		ultrasonic.ali  AD
+
+U controller%s		controller.ads		5de93de7 EE OO PF PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z system%s		system.ads		system.ali
+Z system.parameters%s	s-parame.adb		s-parame.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.task_info%s	s-tasinf.adb		s-tasinf.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
+T 3 3
+
+D ada.ads		20220915113236 76789da1 ada%s
+D a-except.ads		20220915113236 946f3014 ada.exceptions%s
+D a-finali.ads		20220915113236 bf4f806b ada.finalization%s
+D a-interr.ads		20220915113236 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20220915113236 543e27b6 ada.interrupts.names%s
+D a-reatim.ads		20220915113236 cfe92427 ada.real_time%s
+D a-retide.ads		20220915113236 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20220915113236 119b8fb3 ada.streams%s
+D a-string.ads		20220915113236 90ac6797 ada.strings%s
+D a-sttebu.ads		20220915113236 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20220915113236 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20220915113236 9eaa38c6 ada.tags%s
+D a-taside.ads		20220915113236 00e3a3f6 ada.task_identification%s
+D a-unccon.ads		20220915113236 0e9b276f ada.unchecked_conversion%s
+D controller.ads	20221115120414 5de93de7 controller%s
+D controller.adb	20221115120518 9327dd29 controller%b
+D hal.ads		20220915113540 2b42c80e hal%s
+D hal-gpio.ads		20220915113540 7f0c2ffe hal.gpio%s
+D hal-i2c.ads		20220915113540 0ed73138 hal.i2c%s
+D hal-spi.ads		20220915113540 fe139819 hal.spi%s
+D hal-uart.ads		20220915113540 d58316b4 hal.uart%s
+D interfac.ads		20220915113236 edec285f interfaces%s
+D microbit.ads		20220922110248 3b54a3e8 microbit%s
+D microbit-console.ads	20220915113540 0bb00661 microbit.console%s
+D microbit-iosfortasking.ads  20221109102436 7dfd8b70 microbit.iosfortasking%s
+D microbit-radio.ads	20221103110006 6901b417 microbit.radio%s
+D nrf.ads		20220915113540 74cf72f5 nrf%s
+D nrf-device.ads	20220915113540 9c9916c4 nrf.device%s
+D nrf-gpio.ads		20220915113540 ab6d4598 nrf.gpio%s
+D nrf-radio.ads		20221103110006 f28f290a nrf.radio%s
+D nrf-rtc.ads		20220915113540 36d88130 nrf.rtc%s
+D nrf-spi_master.ads	20220915113540 a8ff49a3 nrf.spi_master%s
+D nrf-timers.ads	20221020092224 15fa58e3 nrf.timers%s
+D nrf-twi.ads		20220915113540 4881713f nrf.twi%s
+D nrf-uart.ads		20220915113540 9fa4b8b9 nrf.uart%s
+D nrf_svd.ads		20220915113540 87ba21d7 nrf_svd%s
+D nrf_svd-rtc.ads	20220915113540 57c7ffc8 nrf_svd.rtc%s
+D nrf_svd-spi.ads	20220915113540 6e2ffb69 nrf_svd.spi%s
+D nrf_svd-timer.ads	20220915113540 ba50db1c nrf_svd.timer%s
+D nrf_svd-twi.ads	20220915113540 68301534 nrf_svd.twi%s
+D nrf_svd-uart.ads	20220915113540 83bcebc8 nrf_svd.uart%s
+D sensordata.ads	20221115120804 227aa0fb sensordata%s
+D system.ads		20220915113236 ad54c63c system%s
+D s-bb.ads		20220915113236 09e072ae system.bb%s
+D s-bbbopa.ads		20220915113236 f68efaf0 system.bb.board_parameters%s
+D s-bbbosu.ads		20220915113236 0f820a2a system.bb.board_support%s
+D s-bbcppr.ads		20220915113236 ac5bcd4d system.bb.cpu_primitives%s
+D s-bbinte.ads		20220915113236 c88d39da system.bb.interrupts%s
+D s-bbmcpa.ads		20220915113236 9339744a system.bb.mcu_parameters%s
+D s-bbpara.ads		20220915113236 63167d1e system.bb.parameters%s
+D s-bbthre.ads		20220915113236 c94b446f system.bb.threads%s
+D s-bbthqu.ads		20220915113236 cd23d79e system.bb.threads.queues%s
+D s-bbtime.ads		20220915113236 ad086247 system.bb.time%s
+D s-finmas.ads		20220915113236 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20220915113236 4ff27390 system.finalization_root%s
+D s-imagei.ads		20220915113236 0d3f86a7 system.image_i%s
+D s-imgint.ads		20220915113236 bdb6f5ec system.img_int%s
+D s-interr.ads		20220915113236 d74bd991 system.interrupts%s
+D s-multip.ads		20220915113236 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20220915113236 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20220915113236 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20220915113236 229b14dd system.os_interface%s
+D s-parame.ads		20220915113236 8e90778f system.parameters%s
+D s-pooglo.ads		20220915113236 ede33ef8 system.pool_global%s
+D s-putima.ads		20220915113236 4e095881 system.put_images%s
+D s-reldel.ads		20220915113236 d2ec2544 system.relative_delays%s
+D s-secsta.ads		20220915113236 56a2861c system.secondary_stack%s
+D s-stalib.ads		20220915113236 472fbca8 system.standard_library%s
+D s-stoele.ads		20220915113236 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20220915113236 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20220915113236 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20220915113236 7bdda3fa system.stream_attributes%s
+D s-tasinf.ads		20220915113236 801abd01 system.task_info%s
+D s-taspri.ads		20220915113236 37f162b4 system.task_primitives%s
+D s-taskin.ads		20220915113236 989d56fd system.tasking%s
+D s-taprob.ads		20220915113236 c8fc0753 system.tasking.protected_objects%s
+D s-tasres.ads		20220915113236 0c8ef6fb system.tasking.restricted%s
+D s-tarest.ads		20220915113236 c88b6d9a system.tasking.restricted.stages%s
+D s-traent.ads		20220915113236 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20220915113236 2b077493 system.unsigned_types%s
+D ultrasonic.ads	20221110133730 8d4531d4 ultrasonic%s
+D unchconv.ads		20220915113236 ca2f9e18 unchecked_conversion%s
+G a e
+G c b b b [b controller 12 1 none]
+G c Z s b [senseTK controller 5 9 none]
+G c Z s s [senseTKVIP controller 5 4 none]
+G c Z s b [thinkTK controller 7 9 none]
+G c Z s s [thinkTKVIP controller 7 4 none]
+G c Z s b [actTK controller 9 9 none]
+G c Z s s [actTKVIP controller 9 4 none]
+G c Z s b [driveuni controller 11 14 none]
+G c Z s b [drive controller 13 14 none]
+G c Z s b [getdirection controller__motordriver 18 16 none]
+G c Z s b [setdirection controller__motordriver 19 17 none]
+G c Z s b [motordriver__getdirectionN controller 18 7 none]
+G c Z s b [motordriver__getdirectionP controller 18 7 none]
+G c Z s b [motordriver__setdirectionN controller 19 7 none]
+G c Z s b [motordriver__setdirectionP controller 19 7 none]
+G c Z s s [motordriverTVIP controller 17 4 none]
+G r c none [b controller 12 1 none] [setup microbit__radio 69 14 none]
+G r c none [b controller 12 1 none] [startreceiving microbit__radio 75 14 none]
+G r c none [b controller 12 1 none] [setup ultrasonic 11 14 none]
+G r c none [b controller 12 1 none] [read ultrasonic 7 13 none]
+G r p none [b controller 12 1 none] [setdistance sensordata__ultrasonicsensor 21 17 none]
+G r c none [b controller 12 1 none] [put_line microbit__console 43 14 none]
+G r c none [b controller 12 1 none] [receive microbit__radio 85 13 none]
+G r p none [b controller 12 1 none] [setxvalue sensordata__controllerdata 11 17 none]
+G r p none [b controller 12 1 none] [setyvalue sensordata__controllerdata 13 17 none]
+G r p none [b controller 12 1 none] [setbuttonstate sensordata__buttonstate 28 17 none]
+G r p none [b controller 12 1 none] [getxvalue sensordata__controllerdata 10 16 none]
+G r c none [b controller 12 1 none] [put microbit__console 40 14 none]
+G r p none [b controller 12 1 none] [getyvalue sensordata__controllerdata 12 16 none]
+G r p none [b controller 12 1 none] [getbuttonstate sensordata__buttonstate 27 16 none]
+G r p none [b controller 12 1 none] [getdistance sensordata__ultrasonicsensor 20 16 none]
+G r c none [b controller 12 1 none] [set_analog_period_us microbit__iosfortasking 30 14 none]
+G r c none [b controller 12 1 none] [write microbit__iosfortasking 34 14 none]
+G r c none [b controller 12 1 none] [set microbit__iosfortasking 22 14 none]
+G r c none [senseTK controller 5 9 none] [setup microbit__radio 69 14 none]
+G r c none [senseTK controller 5 9 none] [startreceiving microbit__radio 75 14 none]
+G r c none [senseTK controller 5 9 none] [setup ultrasonic 11 14 none]
+G r c none [senseTK controller 5 9 none] [read ultrasonic 7 13 none]
+G r p none [senseTK controller 5 9 none] [setdistance sensordata__ultrasonicsensor 21 17 none]
+G r c none [senseTK controller 5 9 none] [put_line microbit__console 43 14 none]
+G r c none [senseTK controller 5 9 none] [receive microbit__radio 85 13 none]
+G r p none [senseTK controller 5 9 none] [setxvalue sensordata__controllerdata 11 17 none]
+G r p none [senseTK controller 5 9 none] [setyvalue sensordata__controllerdata 13 17 none]
+G r p none [senseTK controller 5 9 none] [setbuttonstate sensordata__buttonstate 28 17 none]
+G r p none [senseTK controller 5 9 none] [getxvalue sensordata__controllerdata 10 16 none]
+G r c none [senseTK controller 5 9 none] [put microbit__console 40 14 none]
+G r p none [senseTK controller 5 9 none] [getyvalue sensordata__controllerdata 12 16 none]
+G r p none [senseTK controller 5 9 none] [getbuttonstate sensordata__buttonstate 27 16 none]
+G r c none [thinkTK controller 7 9 none] [put_line microbit__console 43 14 none]
+G r p none [thinkTK controller 7 9 none] [getxvalue sensordata__controllerdata 10 16 none]
+G r p none [thinkTK controller 7 9 none] [getyvalue sensordata__controllerdata 12 16 none]
+G r p none [thinkTK controller 7 9 none] [getdistance sensordata__ultrasonicsensor 20 16 none]
+G r c none [actTK controller 9 9 none] [put_line microbit__console 43 14 none]
+G r c none [actTK controller 9 9 none] [set_analog_period_us microbit__iosfortasking 30 14 none]
+G r c none [actTK controller 9 9 none] [write microbit__iosfortasking 34 14 none]
+G r c none [actTK controller 9 9 none] [set microbit__iosfortasking 22 14 none]
+G r c none [driveuni controller 11 14 none] [set_analog_period_us microbit__iosfortasking 30 14 none]
+G r c none [driveuni controller 11 14 none] [write microbit__iosfortasking 34 14 none]
+G r c none [driveuni controller 11 14 none] [set microbit__iosfortasking 22 14 none]
+G r c none [drive controller 13 14 none] [set_analog_period_us microbit__iosfortasking 30 14 none]
+G r p none [drive controller 13 14 none] [getxvalue sensordata__controllerdata 10 16 none]
+G r p none [drive controller 13 14 none] [getyvalue sensordata__controllerdata 12 16 none]
+G r c none [drive controller 13 14 none] [put microbit__console 40 14 none]
+G r c none [drive controller 13 14 none] [put_line microbit__console 43 14 none]
+G r c none [drive controller 13 14 none] [set microbit__iosfortasking 22 14 none]
+G r c none [drive controller 13 14 none] [write microbit__iosfortasking 34 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 16|1r6 1r25
+X 6 a-reatim.ads
+40K13*Real_Time 181e18 16|1w10 1r29
+50M9*Time<53|46M9> 16|15r17 62r17 111r17
+60I9*Time_Span<53|81I9>
+67V13*Clock{50M9}<53|134p13> 16|36s21 68s21 115s21
+71V14*"+"{50M9} 16|57s24 104s30 123s30
+127V13*Milliseconds{60I9} 16|57s26 104s32 123s32
+X 15 controller.ads
+1K9*Controller 25l5 25e15 16|12b14 354l5 354t15
+3E9*Directions 3e89 11r29 18r36 19r35 21r24 16|121r39 129r35 135r36 144r28
+. 145r13
+3n24*Straight{3E9} 16|81r39 179r20
+3n34*Left{3E9} 16|85r39 224r20
+3n40*Right{3E9} 16|79r39 157r20
+3n47*Backward{3E9} 16|83r39 201r20
+3n57*Stop{3E9} 21r38 16|77r39 154r17
+3n63*Rotate_Left{3E9} 16|271r20
+3n76*Rotate_Right{3E9} 16|90r39 247r20
+5t9*Sense 16|14b14 59l5 59t10
+7t9*Think 16|61b17 106l8 106t13
+9t9*Act 16|108b14 125l8 125t11
+11U14*DriveUni 11>25 16|119s10 144b14 295l8 295t16
+11e25 V{3E9} 16|144b24 145r27
+13U14*Drive 13>22 13>36 13>50 16|297b14 353l8 353t13
+13i22 P1{integer} 16|297b22
+13i36 P2{integer} 16|297b36
+13i50 P3{integer} 16|297b50
+17w14*MotorDriver 16|77r13 79r13 81r13 83r13 85r13 90r13 119r20 121r57 127b20
+. 140l8 140t19
+18V16 GetDirection{3E9} 16|119s32 121s69 135b16 138l11 138t23
+19U17 SetDirection 19>31 16|77s25 79s25 81s25 83s25 85s25 90s25 129b17 132l11
+. 132t23
+19e31 V{3E9} 16|129b31 131r28
+21e7 DriveDirection{3E9} 16|131r10 137r17
+X 16 controller.adb
+15m7 myClock{6|50M9} 36m10 57r16
+16r7 RXdata{26|67R12} 43m10 45m54 45r54 46m54 46r54 48m56 48r56
+17r7 TxData{26|67R12} 21m7 22m7 23m7 24m7 27r29 28r30 29r28 30r31
+18i7 Distance{81|5I9} 38m10 40r50 41r58
+62m7 myClock{6|50M9} 68m10 104r22
+63i7 xVal{integer} 72m10 76r14 76r29 78r17 78r32 80r17 80r32 82r17 82r32
+. 84r17 84r32
+64i7 yVal{integer} 73m10 76r44 76r59 78r47 78r62 80r47 80r62 82r46 82r61
+. 84r47 84r62
+65i7 tooClose{integer} 74m10 88r63 89r14
+111m7 myClock{6|50M9} 115m10 123r22
+145e7 Dir{15|3E9} 154r11 157r14 179r14 201r14 224r14 247r14 271r14
+147i7 Speed{25|28I9} 152r17 153r17 177r20 178r20 199r20 200r20 221r20 222r20
+. 244r20 245r20 268r20 269r20 291r20 292r20
+148b7 Forward{boolean} 161r21 162r17 165r17 166r21 170r18 171r22 174r22 175r18
+. 183r17 184r21 187r17 188r21 192r18 193r22 196r18 197r22 205r21 206r17 209r21
+. 210r17 214r22 215r18 218r22 219r18 228r17 229r21 232r21 233r17 237r22 238r18
+. 241r18 242r22 252r17 253r21 256r17 257r21 261r22 262r18 265r22 266r18 275r21
+. 276r17 279r21 280r17 284r18 285r22 288r18 289r22
+298i7 Speed{integer} 306m10 309r15 310r15
+299i7 Turn{integer} 307m10 309r30 310r23
+300i7 L{integer} 309m10 319r13 320m13 327r36 348r33
+301i7 R{integer} 310m10 323r13 324m13 328r42 349r33
+302b7 Forward{boolean} 332r17 333r21 336r17 337r21 341r18 342r22 345r18 346r22
+X 17 hal.ads
+34K9*HAL 16|5w6 5r15 17|166e8
+53M9*UInt8<22|68M9>
+X 18 hal-gpio.ads
+47h9*GPIO_Point
+X 19 hal-i2c.ads
+48h9*I2C_Port
+X 20 hal-spi.ads
+48h9*SPI_Port
+X 21 hal-uart.ads
+48h9*UART_Port
+X 22 interfac.ads
+68M9*Unsigned_8
+X 23 microbit.ads
+58K9*MicroBit 16|2r6 2r28 3r6 3r34 4r6 6r6 6r28 8r5 23|115e13
+X 24 microbit-console.ads
+32K18*Console 16|2w15 2r37 6w15 6r37 24|49e21
+40U14*Put 16|51s10 327s10
+43U14*Put_Line 16|41s10 52s10 53s10 70s10 88s10 117s10 121s10 328s10
+X 25 microbit-iosfortasking.ads
+5K18*IOsForTasking 16|3w15 3r43 25|93e27
+22U14*Set 16|161s10 162s10 165s10 166s10 170s10 171s10 174s10 175s10 183s10
+. 184s10 187s10 188s10 192s10 193s10 196s10 197s10 205s10 206s10 209s10 210s10
+. 214s10 215s10 218s10 219s10 228s10 229s10 232s10 233s10 237s10 238s10 241s10
+. 242s10 252s10 253s10 256s10 257s10 261s10 262s10 265s10 266s10 275s10 276s10
+. 279s10 280s10 284s10 285s10 288s10 289s10 332s10 333s10 336s10 337s10 341s10
+. 342s10 345s10 346s10
+28I9*Analog_Value<short_integer> 16|147r24 348r20 349r20
+30U14*Set_Analog_Period_Us 16|150s7 304s7
+34U14*Write 16|152s7 153s7 155s10 156s10 177s10 178s10 199s10 200s10 221s10
+. 222s10 244s10 245s10 268s10 269s10 291s10 292s10 348s10 349s10
+X 26 microbit-radio.ads
+56K18*Radio 16|4w15 16r16 17r16 26r7 32r7 43r19 26|106e19
+67R12*RadioData{30|181R9} 16|16r22 17r22
+69U14*Setup 16|26s13
+69i21 RadioFrequency{30|74I9} 16|26r19
+70m25 Length{17|53M9} 16|27r19
+71m25 Version{17|53M9} 16|28r19
+72m25 Group{17|53M9} 16|29r19
+73m25 Protocol{17|53M9} 16|30r19
+75U14*StartReceiving 16|32s13
+85V13*Receive{67R12} 16|43s25
+X 27 nrf.ads
+34K9*nRF 16|7r6 27|43e8
+X 30 nrf-radio.ads
+34K13*Radio 16|7w10 30|262e14
+74I9*Radio_Frequency_MHz<short_integer>
+178A9*Payload_Data(17|53M9)<17|53M9>
+182m7*Length{17|53M9} 16|21m14 27r36
+183m7*Version{17|53M9} 16|22m14 28r37
+184m7*Group{17|53M9} 16|23m14 29r35
+185m7*Protocol{17|53M9} 16|24m14 30r38
+186a7*Payload{178A9} 16|45m61 46m61 48m63
+X 42 sensordata.ads
+7K9*SensorData 16|9w6 40r10 45r10 46r10 48r10 51r52 52r43 53r43 72r18 73r18
+. 74r30 306r30 307r29 42|42e15
+9w14*ControllerData 16|45r21 46r21 51r63 52r54 72r29 73r29 306r41 307r40
+10V16 getXvalue{integer} 16|51s78 72s44 306s56
+11U17 setXvalue 16|45s36
+12V16 getYvalue{integer} 16|52s69 73s44 307s55
+13U17 setYvalue 16|46s36
+19w14*UltraSonicSensor 16|40r21 74r41
+20V16 getDistance{81|5I9} 16|74s58
+21U17 setDistance 16|40s38
+26w14*ButtonState 16|48r21 53r54
+27V16 getButtonState{integer} 16|53s66
+28U17 setButtonState 16|48s33
+X 53 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+X 58 s-interr.ads
+97U14*Install_Restricted_Handlers_Sequential 98i<c,__gnat_attach_all_handlers>22
+X 67 s-secsta.ads
+46P9*SS_Stack_Ptr(43R9)
+X 75 s-taskin.ads
+398V13*Get_Sec_Stack{67|46P9} 399i<c,__gnat_get_secondary_stack>22
+X 78 s-tarest.ads
+232U14*Activate_All_Tasks_Sequential 233i<c,__gnat_activate_all_tasks>22
+X 81 ultrasonic.ads
+3K9*Ultrasonic 16|10w6 18r18 33r7 38r22 41r29 81|17e15
+5I9*Distance_cm<short_integer> 16|18r29 41r40
+7V13*Read{5I9} 16|38s33
+11U14*Setup 16|33s18
+
