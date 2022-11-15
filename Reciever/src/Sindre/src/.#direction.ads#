@@ -1,0 +1,5 @@
+package Direction is
+
+   type setDirection
+
+end Direction;

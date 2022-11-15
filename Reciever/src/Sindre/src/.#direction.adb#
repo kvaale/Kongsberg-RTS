@@ -1,0 +1,25 @@
+package body Direction is
+
+   --LEFT
+         --front
+         Set(6, Forward); --IN1
+         Set(7, not Forward); --IN2
+
+         --back
+         Set(2, Forward); --IN3
+         Set(3, not Forward); --IN4
+
+         --RIGHT
+         --front
+         Set(12, Forward); --IN1
+         Set(13, not Forward); --IN2
+
+         --back
+         Set(14, Forward); --IN3
+         Set(15, not Forward); --IN4
+
+         Write (0, Speed); --left speed control ENA ENB
+         Write (1, Speed); --right speed control ENA ENB
+
+
+end Direction;

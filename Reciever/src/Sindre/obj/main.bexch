@@ -1,0 +1,25 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Bil Prosjekt\Bil Prosjekt 2\bilprosjekt.gpr
+20221103134558 b3c6011c5170b145f003b9d689a64340
+C:\Git Repo\Ada_Drivers_Library\boards\MicroBit_v2\microbit_v2_full.gpr
+20221109102436 0339ae0a50aa7efa8b7184562b062231
+[BOUND OBJECT FILES]
+C:\Bil Prosjekt\Bil Prosjekt 2\obj\ultrasonic.o
+C:\Bil Prosjekt\Bil Prosjekt 2\obj\sensordata.o
+C:\Bil Prosjekt\Bil Prosjekt 2\obj\controller.o
+C:\Bil Prosjekt\Bil Prosjekt 2\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Bil Prosjekt\Bil Prosjekt 2\obj\
+-LC:\Bil Prosjekt\Bil Prosjekt 2\obj\
+-LC:\Git Repo\Ada_Drivers_Library\boards\MicroBit_v2\obj\full_lib_Debug\
+-LC:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\
+-static
+-static-libgcc
+C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\libgnarl.a
+C:\gnat\2021-arm-elf\arm-eabi\lib\gnat\ravenscar-full-nrf52833\adalib\libgnat.a
