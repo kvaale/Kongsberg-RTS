@@ -1,4 +1,6 @@
-with Composer;
+with taskRecieve;
+with taskDrive;
+with taskThink;
 
 procedure Main with Priority => 0 is
 begin

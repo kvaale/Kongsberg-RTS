@@ -2,6 +2,6 @@ with protectedObjects;
 
 package taskRecieve is
 
-   task Recieve with Priority => 1;
+   task Recieve with Priority => 3;
 
 end taskRecieve;

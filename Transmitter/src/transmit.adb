@@ -1,10 +1,10 @@
-with MicroBit.Radio;
 with HAL; use HAL;
-with MicroBit.Console; use MicroBit.Console;
 with nRF.Radio;
+with MicroBit.Radio;
+with MicroBit.Console; use MicroBit.Console;
 with MicroBit.Buttons; use MicroBit.Buttons;
-use MicroBit;
 with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
+use MicroBit;
 
 package body transmit is
    procedure sendBuf is
@@ -48,12 +48,8 @@ package body transmit is
          TxData.Payload(1) := yVal;  -- Speed
          TxData.Payload(2) := xVal;  -- Turn rate
          TxData.Payload(3) := Dir;   -- Direction, 1 is Forward
-         TxData.Payload(4) := Mode;     -- Driving mode
-         --  Put(" yVal: " & UInt8'Image(yVal));
-         --  Put_Line(" xVal: " & UInt8'Image(xVal));
-
+         TxData.Payload(4) := Mode;  -- Driving mode
          Radio.Transmit(TxData);
-         --  delay(0.5);
       end loop;
    end sendBuf;
 end transmit;

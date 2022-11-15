@@ -1,10 +1,9 @@
 with protectedObjects; use protectedObjects;
 with Ada.Real_Time; use Ada.Real_Time;
-with MicroBit.Radio;
+with MicroBit.Radio; use MicroBit;
 with HAL; use HAL;
-with MicroBit.Console; use MicroBit.Console;
-use MicroBit;
 with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
+with MicroBit.Console; use MicroBit.Console; use MicroBit;
 
 package body taskRecieve is
    task body Recieve is
@@ -28,17 +27,16 @@ package body taskRecieve is
       Put_Line(Radio.State); -- this should report Status: 3, meaning in RX mode
       loop
          myClock := Clock;
+         --  Put_Line("Entering task Recieve");
 
-         loop
+         --  loop
             while Radio.DataReady loop
                RxData := Radio.Receive;
-               Obj.Set(RxData.Payload);
+               objRec.setPayload(RxData.Payload);
             end loop;
-         end loop;
+         --  end loop;
 
-         delay until myClock + Milliseconds(200); --random period
+         delay until myClock + Milliseconds(10);
       end loop;
    end Recieve;
 end taskRecieve;
-
-
