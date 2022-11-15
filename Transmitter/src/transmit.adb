@@ -48,7 +48,7 @@ package body transmit is
          TxData.Payload(1) := yVal;  -- Speed
          TxData.Payload(2) := xVal;  -- Turn rate
          TxData.Payload(3) := Dir;   -- Direction, 1 is Forward
-         TxData.Payload(4) := 1;     -- Driving mode
+         TxData.Payload(4) := Mode;     -- Driving mode
          --  Put(" yVal: " & UInt8'Image(yVal));
          --  Put_Line(" xVal: " & UInt8'Image(xVal));
 
