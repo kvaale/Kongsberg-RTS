@@ -1,5 +1,6 @@
 with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 with nRF.Radio;
+with Ultrasonic;
 
 package protectedObjects is
 
@@ -10,9 +11,15 @@ package protectedObjects is
       RxDataPayload : nRF.Radio.Payload_Data;
    end objRec;
 
+   protected UltraSonicSensor is
+      function getDistance return Ultrasonic.Distance_cm;
+      procedure setDistance (V : Ultrasonic.Distance_cm);
+   private
+      Dist : Ultrasonic.Distance_cm;
+   end UltraSonicSensor;
+
    protected objThink is
-      procedure setDrive(V1 : Analog_Value; V2 : Analog_Value; V3 : Boolean);
-      procedure setDriveUni(V1 : Boolean; V2 : Boolean; V3 : Boolean; V4 : Boolean; V5 : Analog_Value; V6 : Analog_Value);
+      procedure setDrive(V1 : Boolean; V2 : Boolean; V3 : Boolean; V4 : Boolean; V5 : Analog_Value; V6 : Analog_Value);
       function get_L return Analog_Value;
       function get_R return Analog_Value;
       function get_Dir return Boolean;

@@ -1,6 +1,7 @@
 with taskRecieve;
 with taskDrive;
 with taskThink;
+with taskSense;
 
 procedure Main with Priority => 0 is
 begin

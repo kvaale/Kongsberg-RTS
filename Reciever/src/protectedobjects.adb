@@ -1,6 +1,3 @@
-with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
-with nRF.Radio;
-
 package body protectedObjects is
 
    protected body objRec is
@@ -16,18 +13,21 @@ package body protectedObjects is
       end getPayload;
    end objRec;
    
-   protected body objThink is
-      procedure setDrive (V1 : Analog_Value; V2 : Analog_Value; V3 : Boolean) is
-      begin
-         L := V1;
-         R := V2;
-         Dir_L1 := V3;
-         Dir_L2 := V3;
-         Dir_R1 := V3;
-         Dir_R2 := V3;
-      end setDrive;
+   protected body UltraSonicSensor is
+      function getDistance return Ultrasonic.Distance_cm is 
+      begin 
+         return Dist;
+      end getDistance;
       
-      procedure setDriveUni (V1 : Boolean; V2 : Boolean; V3 : Boolean; V4 : Boolean; V5 : Analog_Value; V6 : Analog_Value) is
+      procedure setDistance (V : Ultrasonic.Distance_cm) is 
+      begin 
+         Dist := V;
+      end setDistance; 
+   end UltraSonicSensor;
+   
+   protected body objThink is
+      
+      procedure setDrive (V1 : Boolean; V2 : Boolean; V3 : Boolean; V4 : Boolean; V5 : Analog_Value; V6 : Analog_Value) is
       begin
          Dir_L1 := V1;
          Dir_L2 := V2;
@@ -35,7 +35,7 @@ package body protectedObjects is
          Dir_R2 := V4;
          L := V5;
          R := V6;
-      end setDriveUni;
+      end setDrive;
       
       function get_L return Analog_Value is
       begin
