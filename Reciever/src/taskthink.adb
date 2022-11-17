@@ -57,7 +57,7 @@ package body taskThink is
             end if;
          end if;
          
-         delay until myClock + Milliseconds(50);
+         delay until myClock + Milliseconds(1);
       end loop;
    end Think;
 end taskThink;

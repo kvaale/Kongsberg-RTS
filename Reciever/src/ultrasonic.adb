@@ -46,7 +46,7 @@ package body Ultrasonic is
       end loop;
 
       --wait for echo to end
-      while GPIO_Periph.IN_k.Arr(echo_pin_device) = high loop
+      while GPIO_Periph.IN_k.Arr(echo_pin_device) = high and delayCounter <= 20 loop
          Delay_Us(58);  --wait for 58 us or 1 cm distance and check again
          delayCounter := delayCounter + 1;
       end loop;
@@ -60,8 +60,8 @@ package body Ultrasonic is
       -- Distance formula see: https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
       temp_result := echo_time_us/ 58;
 
-      if temp_result > 400 then
-         temp_result := 400;
+      if temp_result > 20 then
+         temp_result := 20;
       end if;
 
       if temp_result < 2 then

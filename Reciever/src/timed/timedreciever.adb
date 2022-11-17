@@ -62,3 +62,8 @@ package body timedReciever is
       end loop;
    end Recieve;
 end timedReciever;
+
+--  Worst-case CPU time:  0.000030518 seconds
+--  Worst-case Stopwatch time:  0.000030518 seconds
+
+

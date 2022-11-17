@@ -38,9 +38,16 @@ package body timedSense is
          Put_Line ("Worst-case CPU time: " & To_Duration (WorstCase_CPU)'Image & " seconds");
          Put_Line ("Worst-case Stopwatch time: " & To_Duration (WorstCase_Stopwatch)'Image & " seconds");
          
-         --  delay(0.5);
+         delay(0.1);
          
       end loop;
    end Sense;
 
 end timedSense;
+
+--  Worst-case CPU time:  0.002960205 seconds        (MAX DISTANCE: 10cm)
+--  Worst-case Stopwatch time:  0.002990723 seconds  (MAX DISTANCE: 10cm)
+
+--  Worst-case CPU time:  0.00357 seconds            (MAX DISTANCE: 20cm)
+--  Worst-case Stopwatch time:  0.00357 seconds      (MAX DISTANCE: 20cm)
+

@@ -24,7 +24,7 @@ package body taskDrive is
          Write (0, objThink.get_L);     --left speed control ENA ENB
          Write (1, objThink.get_R);     --right speed control ENA ENB
 
-         delay until myClock + Milliseconds(10);
+         delay until myClock + Milliseconds(20);
       end loop;
    end Drive;
 end taskDrive;

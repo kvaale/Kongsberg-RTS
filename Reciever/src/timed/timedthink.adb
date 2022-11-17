@@ -22,12 +22,12 @@ package body timedThink is
          WorstCase_Stopwatch := Time_Span_Zero;
          Elapsed_Stopwatch := Time_Span_Zero;
          Elapsed_CPU := Time_Span_Zero;
-         RxData.Payload(1) := 128;  -- yVal
-         RxData.Payload(2) := 128;  -- xVal
+         RxData.Payload(1) := 157;  -- yVal
+         RxData.Payload(2) := 98;  -- xVal
          RxData.Payload(3) := 1;    -- Direction
          RxData.Payload(4) := 0;    -- Driving mode
          objRec.setPayload(RxData.Payload);
-         UltraSonicSensor.setDistance(300);  -- Sensor distance
+         UltraSonicSensor.setDistance(4);  -- Sensor distance
          
          for Index in 1..AmountOfMeasurement loop
             Time_Now_Stopwatch := Clock;
@@ -100,3 +100,11 @@ package body timedThink is
    end Think;
 
 end timedThink;
+
+
+--  Worst-case CPU time:  0.000061035 seconds         (MODE 0)
+--  Worst-case Stopwatch time:  0.000061035 seconds   (MODE 0)
+
+--  Worst-case CPU time:  0.000061035 seconds         (MODE 1)
+--  Worst-case Stopwatch time:  0.000061035 seconds   (MODE 1)
+

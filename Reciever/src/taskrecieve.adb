@@ -26,7 +26,7 @@ package body taskRecieve is
                objRec.setPayload(RxData.Payload);
             end loop;
 
-         delay until myClock + Milliseconds(50);
+         delay until myClock + Milliseconds(1);
       end loop;
    end Recieve;
 end taskRecieve;

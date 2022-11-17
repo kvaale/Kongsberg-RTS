@@ -17,7 +17,7 @@ package body timedDrive is
          Elapsed_Stopwatch := Time_Span_Zero;
          Elapsed_CPU := Time_Span_Zero;
          
-         objThink.setDrive(True, True, True, True, 512, 512);
+         objThink.setDrive(True, True, True, True, 348, 959);
          
          for Index in 1..AmountOfMeasurement loop
             Time_Now_Stopwatch := Clock;
@@ -64,3 +64,7 @@ package body timedDrive is
    end Drive;
 
 end timedDrive;
+
+
+--  Worst-case CPU time:  0.0000152588 seconds
+--  Worst-case Stopwatch time:  0.0000152588 seconds

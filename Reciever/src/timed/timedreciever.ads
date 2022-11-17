@@ -4,7 +4,7 @@ with Ada.Execution_Time; use Ada.Execution_Time;
 with MicroBit.Radio; use MicroBit;
 with HAL; use HAL;
 with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
-with MicroBit.Console; use MicroBit.Console; use MicroBit;
+with Ada.Text_IO; use Ada.Text_IO;
 
 package timedReciever is
 
