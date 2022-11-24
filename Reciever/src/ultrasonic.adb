@@ -2,6 +2,7 @@ package body Ultrasonic is
    trigger_pin_device : Integer;
    echo_pin_device : Integer;
    result : Distance_cm := 0;
+   myClock : Time;
 
    procedure Setup (trigger_pin : Pin_Id; echo_pin : Pin_Id) is
       dummy : Boolean; -- we dont use this variable for anything, but need it to setup the input (bad API)
@@ -26,6 +27,8 @@ package body Ultrasonic is
 
    procedure SendTriggerPulse is
    begin
+      myClock := Clock;
+      
       GPIO_Periph.OUT_k.Arr (trigger_pin_device) := high;
       Delay_Us(10); -- Not 10 us, more about 11.4us (10 us+ required by ultrasonic spec)
       --Higher delays become more accurate
@@ -42,7 +45,9 @@ package body Ultrasonic is
    begin
       --wait for echo to start
       while GPIO_Periph.IN_k.Arr(echo_pin_device) = low loop
-         null;
+         if Clock > myClock + Milliseconds(19) then
+            Cortex_M.NVIC.Reset_System;
+         end if;
       end loop;
 
       --wait for echo to end

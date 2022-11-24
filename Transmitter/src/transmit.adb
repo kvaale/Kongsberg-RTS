@@ -29,16 +29,16 @@ package body transmit is
       Put_Line(Radio.State); -- this should report Status: 3, meaning in RX mode
       loop
 
-         yVal := UInt8((Analog(10))/4);
-         xVal := UInt8((Analog(4))/4);
+         yVal := UInt8((Analog(10))/4);  -- Divided by 4 to fit in UInt8
+         xVal := UInt8((Analog(4))/4);   -- Divided by 4 to fit in UInt8
 
          if MicroBit.Buttons.State (Button_B) = Released then
             if yVal > 127 then
-               yVal := 2*(yVal-127);
-               Dir := 1;
+               yVal := 2*(yVal-127);     -- yVal (Speed) starts at
+               Dir := 1;                 -- 0 in dead centre (=128)
             else
-               yVal := 2*(-yVal+127);
-               Dir := 0;
+               yVal := 2*(-yVal+127);    -- Calculated yVal increases
+               Dir := 0;                 -- when joystick is pulled down
             end if;
             Mode := 0;
          else

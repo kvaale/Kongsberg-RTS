@@ -3,6 +3,8 @@ with MicroBit.IOsForTasking; use MicroBit.IOsForTasking;
 with NRF_SVD.GPIO; use NRF_SVD.GPIO;
 use MicroBit;
 with HAL; use HAL;
+with Ada.Real_Time; use Ada.Real_Time;
+with Cortex_M.NVIC;
 
 package Ultrasonic is
 

@@ -15,7 +15,7 @@ package body taskThink is
          xVal := Integer((objRec.getPayload(2)));  -- xVal = Turn
          Mode := objRec.getPayload(4);
       
-         if Integer(UltraSonicSensor.getDistance) <= 5 then
+         if Integer(UltraSonicSensor.getDistance) <= 6 then
             objThink.setDrive(True, True, False, False, 512, 512);
          else
             if Mode < 1 then
